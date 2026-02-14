@@ -1,0 +1,8 @@
+/.claude/
+/.gradle/
+/.idea/
+/.kotlin/
+/build/
+/core/build/
+/sample/build/
+.DS_Store
