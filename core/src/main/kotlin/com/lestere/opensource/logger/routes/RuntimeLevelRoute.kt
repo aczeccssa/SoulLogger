@@ -4,6 +4,12 @@ import com.lestere.opensource.config.RuntimeLevelManager
 import com.lestere.opensource.logger.SoulLogger
 import com.lestere.opensource.logger.SoulLogger.Level
 import com.lestere.opensource.logger.SoulLoggerPluginConfiguration
+import com.lestere.opensource.models.ErrorResponse
+import com.lestere.opensource.models.GlobalLevelResponse
+import com.lestere.opensource.models.RemoveLevelResponse
+import com.lestere.opensource.models.ResetLevelsResponse
+import com.lestere.opensource.models.SetGlobalLevelResponse
+import com.lestere.opensource.models.SetLevelResponse
 import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.request.*
@@ -20,7 +26,7 @@ fun Application.configureRuntimeLevel(config: SoulLoggerPluginConfiguration, lev
             }
             
             get("/global") {
-                call.respond(mapOf("level" to levelManager.getGlobalLevelValue().name))
+                call.respond(GlobalLevelResponse(level = levelManager.getGlobalLevelValue().name))
             }
             
             put {
@@ -28,13 +34,13 @@ fun Application.configureRuntimeLevel(config: SoulLoggerPluginConfiguration, lev
                 try {
                     val level = Level.valueOf(request.level.uppercase())
                     levelManager.setLevel(request.packagePattern, level)
-                    call.respond(mapOf(
-                        "success" to true,
-                        "packagePattern" to (request.packagePattern.ifBlank { "global" }),
-                        "level" to level.name
+                    call.respond(SetLevelResponse(
+                        success = true,
+                        packagePattern = request.packagePattern.ifBlank { "global" },
+                        level = level.name
                     ))
                 } catch (e: Exception) {
-                    call.respond(HttpStatusCode.BadRequest, mapOf("error" to e.message))
+                    call.respond(HttpStatusCode.BadRequest, ErrorResponse(error = e.message ?: "Unknown error"))
                 }
             }
             
@@ -43,9 +49,9 @@ fun Application.configureRuntimeLevel(config: SoulLoggerPluginConfiguration, lev
                 try {
                     val level = Level.valueOf(request.level.uppercase())
                     levelManager.setLevel("", level)
-                    call.respond(mapOf("success" to true, "globalLevel" to level.name))
+                    call.respond(SetGlobalLevelResponse(success = true, globalLevel = level.name))
                 } catch (e: Exception) {
-                    call.respond(HttpStatusCode.BadRequest, mapOf("error" to e.message))
+                    call.respond(HttpStatusCode.BadRequest, ErrorResponse(error = e.message ?: "Unknown error"))
                 }
             }
             
@@ -53,15 +59,15 @@ fun Application.configureRuntimeLevel(config: SoulLoggerPluginConfiguration, lev
                 val pattern = call.parameters["pattern"]
                 if (pattern != null) {
                     levelManager.reset(pattern)
-                    call.respond(mapOf("success" to true, "removed" to pattern))
+                    call.respond(RemoveLevelResponse(success = true, removed = pattern))
                 } else {
-                    call.respond(HttpStatusCode.BadRequest, mapOf("error" to "Pattern required"))
+                    call.respond(HttpStatusCode.BadRequest, ErrorResponse(error = "Pattern required"))
                 }
             }
             
             delete {
                 levelManager.reset()
-                call.respond(mapOf("success" to true, "message" to "All custom levels reset"))
+                call.respond(ResetLevelsResponse(success = true, message = "All custom levels reset"))
             }
         }
     }

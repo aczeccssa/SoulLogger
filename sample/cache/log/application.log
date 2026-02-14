@@ -1,0 +1,253 @@
+2026-02-15 03:05:32.738 DEBUG [main] i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+2026-02-15 03:05:32.744 DEBUG [main] i.n.util.internal.PlatformDependent0 - Java version: 23
+2026-02-15 03:05:32.744 DEBUG [main] i.n.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+2026-02-15 03:05:32.746 DEBUG [main] i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2026-02-15 03:05:32.746 DEBUG [main] i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe base methods: all available
+2026-02-15 03:05:32.747 DEBUG [main] i.n.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2026-02-15 03:05:32.747 DEBUG [main] i.n.util.internal.PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2026-02-15 03:05:32.747 DEBUG [main] i.n.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+2026-02-15 03:05:32.747 DEBUG [main] i.n.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: symbolic reference class is not accessible: class jdk.internal.misc.Unsafe, from class io.netty.util.internal.PlatformDependent0 (unnamed module @17503f6b)
+2026-02-15 03:05:32.748 DEBUG [main] i.n.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+2026-02-15 03:05:32.748 DEBUG [main] i.n.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2026-02-15 03:05:32.748 DEBUG [main] i.n.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/g9/2v3db5gn0jjd3qpx5qdbs6jm0000gn/T (java.io.tmpdir)
+2026-02-15 03:05:32.748 DEBUG [main] i.n.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2026-02-15 03:05:32.748 DEBUG [main] i.n.util.internal.PlatformDependent - Platform: MacOS
+2026-02-15 03:05:32.748 DEBUG [main] i.n.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+2026-02-15 03:05:32.749 DEBUG [main] io.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+2026-02-15 03:05:32.749 DEBUG [main] i.n.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2026-02-15 03:05:32.750 DEBUG [main] i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.workdir: /var/folders/g9/2v3db5gn0jjd3qpx5qdbs6jm0000gn/T (io.netty.tmpdir)
+2026-02-15 03:05:32.750 DEBUG [main] i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.deleteLibAfterLoading: true
+2026-02-15 03:05:32.750 DEBUG [main] i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.tryPatchShadedId: true
+2026-02-15 03:05:32.751 DEBUG [main] i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.detectNativeLibraryDuplicates: true
+2026-02-15 03:05:32.759 DEBUG [main] io.netty.channel.kqueue.KQueue - KQueue support is not available: could not load a native library: netty_transport_native_kqueue_aarch_64
+2026-02-15 03:05:32.765 DEBUG [main] io.netty.channel.epoll.Epoll - Epoll support is not available: null
+2026-02-15 03:05:32.768 DEBUG [main] i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 20
+2026-02-15 03:05:32.769 DEBUG [main] io.netty.channel.nio.NioIoHandler - -Dio.netty.noKeySetOptimization: false
+2026-02-15 03:05:32.769 DEBUG [main] io.netty.channel.nio.NioIoHandler - -Dio.netty.selectorAutoRebuildThreshold: 512
+2026-02-15 03:05:32.772 DEBUG [main] i.n.u.concurrent.GlobalEventExecutor - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+2026-02-15 03:05:32.774 DEBUG [main] i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2026-02-15 03:05:32.774 DEBUG [main] i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2026-02-15 03:05:32.777 DEBUG [main] i.n.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+2026-02-15 03:05:32.795 DEBUG [main] io.netty.channel.DefaultChannelId - -Dio.netty.processId: 94586 (auto-detected)
+2026-02-15 03:05:32.797 DEBUG [main] io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+2026-02-15 03:05:32.797 DEBUG [main] io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+2026-02-15 03:05:32.802 DEBUG [main] i.netty.util.NetUtilInitializations - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+2026-02-15 03:05:32.802 DEBUG [main] io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+2026-02-15 03:05:32.804 DEBUG [main] io.netty.channel.DefaultChannelId - -Dio.netty.machineId: f8:4d:89:ff:fe:8c:b3:48 (auto-detected)
+2026-02-15 03:05:32.808 DEBUG [main] io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+2026-02-15 03:05:32.808 DEBUG [main] io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+2026-02-15 03:05:32.817 DEBUG [main] i.n.buffer.AdaptiveByteBufAllocator - -Dio.netty.allocator.useCachedMagazinesForNonEventLoopThreads: false
+2026-02-15 03:05:32.823 DEBUG [main] io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2026-02-15 03:05:32.823 DEBUG [main] io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+2026-02-15 03:05:32.823 DEBUG [main] io.netty.util.Recycler - -Dio.netty.recycler.chunkSize: 32
+2026-02-15 03:05:32.823 DEBUG [main] io.netty.util.Recycler - -Dio.netty.recycler.blocking: false
+2026-02-15 03:05:32.823 DEBUG [main] io.netty.util.Recycler - -Dio.netty.recycler.batchFastThreadLocalOnly: true
+2026-02-15 03:05:32.824 DEBUG [main] io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: adaptive
+2026-02-15 03:05:32.824 DEBUG [main] io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+2026-02-15 03:05:32.824 DEBUG [main] io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2026-02-15 03:05:32.825 DEBUG [main] i.n.b.ChannelInitializerExtensions - -Dio.netty.bootstrap.extensions: null
+2026-02-15 03:05:32.833 INFO  [DefaultDispatcher-worker-12] io.ktor.server.Application - Responding at http://0.0.0.0:8000
+2026-02-15 03:05:51.723 DEBUG [main] i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+2026-02-15 03:05:51.729 DEBUG [main] i.n.util.internal.PlatformDependent0 - Java version: 23
+2026-02-15 03:05:51.730 DEBUG [main] i.n.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+2026-02-15 03:05:51.731 DEBUG [main] i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2026-02-15 03:05:51.732 DEBUG [main] i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe base methods: all available
+2026-02-15 03:05:51.732 DEBUG [main] i.n.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2026-02-15 03:05:51.732 DEBUG [main] i.n.util.internal.PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2026-02-15 03:05:51.732 DEBUG [main] i.n.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+2026-02-15 03:05:51.733 DEBUG [main] i.n.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: symbolic reference class is not accessible: class jdk.internal.misc.Unsafe, from class io.netty.util.internal.PlatformDependent0 (unnamed module @17503f6b)
+2026-02-15 03:05:51.733 DEBUG [main] i.n.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+2026-02-15 03:05:51.733 DEBUG [main] i.n.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2026-02-15 03:05:51.733 DEBUG [main] i.n.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/g9/2v3db5gn0jjd3qpx5qdbs6jm0000gn/T (java.io.tmpdir)
+2026-02-15 03:05:51.733 DEBUG [main] i.n.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2026-02-15 03:05:51.733 DEBUG [main] i.n.util.internal.PlatformDependent - Platform: MacOS
+2026-02-15 03:05:51.733 DEBUG [main] i.n.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+2026-02-15 03:05:51.734 DEBUG [main] io.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+2026-02-15 03:05:51.734 DEBUG [main] i.n.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2026-02-15 03:05:51.736 DEBUG [main] i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.workdir: /var/folders/g9/2v3db5gn0jjd3qpx5qdbs6jm0000gn/T (io.netty.tmpdir)
+2026-02-15 03:05:51.736 DEBUG [main] i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.deleteLibAfterLoading: true
+2026-02-15 03:05:51.736 DEBUG [main] i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.tryPatchShadedId: true
+2026-02-15 03:05:51.736 DEBUG [main] i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.detectNativeLibraryDuplicates: true
+2026-02-15 03:05:51.745 DEBUG [main] io.netty.channel.kqueue.KQueue - KQueue support is not available: could not load a native library: netty_transport_native_kqueue_aarch_64
+2026-02-15 03:05:51.750 DEBUG [main] io.netty.channel.epoll.Epoll - Epoll support is not available: null
+2026-02-15 03:05:51.754 DEBUG [main] i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 20
+2026-02-15 03:05:51.755 DEBUG [main] io.netty.channel.nio.NioIoHandler - -Dio.netty.noKeySetOptimization: false
+2026-02-15 03:05:51.755 DEBUG [main] io.netty.channel.nio.NioIoHandler - -Dio.netty.selectorAutoRebuildThreshold: 512
+2026-02-15 03:05:51.758 DEBUG [main] i.n.u.concurrent.GlobalEventExecutor - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+2026-02-15 03:05:51.760 DEBUG [main] i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2026-02-15 03:05:51.760 DEBUG [main] i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2026-02-15 03:05:51.763 DEBUG [main] i.n.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+2026-02-15 03:05:51.780 DEBUG [main] io.netty.channel.DefaultChannelId - -Dio.netty.processId: 94650 (auto-detected)
+2026-02-15 03:05:51.782 DEBUG [main] io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+2026-02-15 03:05:51.782 DEBUG [main] io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+2026-02-15 03:05:51.786 DEBUG [main] i.netty.util.NetUtilInitializations - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+2026-02-15 03:05:51.787 DEBUG [main] io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+2026-02-15 03:05:51.788 DEBUG [main] io.netty.channel.DefaultChannelId - -Dio.netty.machineId: f8:4d:89:ff:fe:8c:b3:48 (auto-detected)
+2026-02-15 03:05:51.792 DEBUG [main] io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+2026-02-15 03:05:51.792 DEBUG [main] io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+2026-02-15 03:05:51.800 DEBUG [main] i.n.buffer.AdaptiveByteBufAllocator - -Dio.netty.allocator.useCachedMagazinesForNonEventLoopThreads: false
+2026-02-15 03:05:51.805 DEBUG [main] io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2026-02-15 03:05:51.805 DEBUG [main] io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+2026-02-15 03:05:51.805 DEBUG [main] io.netty.util.Recycler - -Dio.netty.recycler.chunkSize: 32
+2026-02-15 03:05:51.805 DEBUG [main] io.netty.util.Recycler - -Dio.netty.recycler.blocking: false
+2026-02-15 03:05:51.805 DEBUG [main] io.netty.util.Recycler - -Dio.netty.recycler.batchFastThreadLocalOnly: true
+2026-02-15 03:05:51.806 DEBUG [main] io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: adaptive
+2026-02-15 03:05:51.806 DEBUG [main] io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+2026-02-15 03:05:51.806 DEBUG [main] io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2026-02-15 03:05:51.807 DEBUG [main] i.n.b.ChannelInitializerExtensions - -Dio.netty.bootstrap.extensions: null
+2026-02-15 03:06:23.125 DEBUG [main] i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+2026-02-15 03:06:23.131 DEBUG [main] i.n.util.internal.PlatformDependent0 - Java version: 23
+2026-02-15 03:06:23.131 DEBUG [main] i.n.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+2026-02-15 03:06:23.132 DEBUG [main] i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2026-02-15 03:06:23.133 DEBUG [main] i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe base methods: all available
+2026-02-15 03:06:23.133 DEBUG [main] i.n.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2026-02-15 03:06:23.133 DEBUG [main] i.n.util.internal.PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2026-02-15 03:06:23.133 DEBUG [main] i.n.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+2026-02-15 03:06:23.134 DEBUG [main] i.n.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: symbolic reference class is not accessible: class jdk.internal.misc.Unsafe, from class io.netty.util.internal.PlatformDependent0 (unnamed module @17503f6b)
+2026-02-15 03:06:23.134 DEBUG [main] i.n.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+2026-02-15 03:06:23.134 DEBUG [main] i.n.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2026-02-15 03:06:23.134 DEBUG [main] i.n.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/g9/2v3db5gn0jjd3qpx5qdbs6jm0000gn/T (java.io.tmpdir)
+2026-02-15 03:06:23.134 DEBUG [main] i.n.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2026-02-15 03:06:23.134 DEBUG [main] i.n.util.internal.PlatformDependent - Platform: MacOS
+2026-02-15 03:06:23.134 DEBUG [main] i.n.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+2026-02-15 03:06:23.135 DEBUG [main] io.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+2026-02-15 03:06:23.135 DEBUG [main] i.n.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2026-02-15 03:06:23.137 DEBUG [main] i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.workdir: /var/folders/g9/2v3db5gn0jjd3qpx5qdbs6jm0000gn/T (io.netty.tmpdir)
+2026-02-15 03:06:23.137 DEBUG [main] i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.deleteLibAfterLoading: true
+2026-02-15 03:06:23.137 DEBUG [main] i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.tryPatchShadedId: true
+2026-02-15 03:06:23.137 DEBUG [main] i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.detectNativeLibraryDuplicates: true
+2026-02-15 03:06:23.144 DEBUG [main] io.netty.channel.kqueue.KQueue - KQueue support is not available: could not load a native library: netty_transport_native_kqueue_aarch_64
+2026-02-15 03:06:23.149 DEBUG [main] io.netty.channel.epoll.Epoll - Epoll support is not available: null
+2026-02-15 03:06:23.152 DEBUG [main] i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 20
+2026-02-15 03:06:23.153 DEBUG [main] io.netty.channel.nio.NioIoHandler - -Dio.netty.noKeySetOptimization: false
+2026-02-15 03:06:23.153 DEBUG [main] io.netty.channel.nio.NioIoHandler - -Dio.netty.selectorAutoRebuildThreshold: 512
+2026-02-15 03:06:23.157 DEBUG [main] i.n.u.concurrent.GlobalEventExecutor - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+2026-02-15 03:06:23.159 DEBUG [main] i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2026-02-15 03:06:23.159 DEBUG [main] i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2026-02-15 03:06:23.162 DEBUG [main] i.n.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+2026-02-15 03:06:23.178 DEBUG [main] io.netty.channel.DefaultChannelId - -Dio.netty.processId: 94884 (auto-detected)
+2026-02-15 03:06:23.180 DEBUG [main] io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+2026-02-15 03:06:23.181 DEBUG [main] io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+2026-02-15 03:06:23.185 DEBUG [main] i.netty.util.NetUtilInitializations - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+2026-02-15 03:06:23.186 DEBUG [main] io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+2026-02-15 03:06:23.187 DEBUG [main] io.netty.channel.DefaultChannelId - -Dio.netty.machineId: f8:4d:89:ff:fe:8c:b3:48 (auto-detected)
+2026-02-15 03:06:23.190 DEBUG [main] io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+2026-02-15 03:06:23.191 DEBUG [main] io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+2026-02-15 03:06:23.199 DEBUG [main] i.n.buffer.AdaptiveByteBufAllocator - -Dio.netty.allocator.useCachedMagazinesForNonEventLoopThreads: false
+2026-02-15 03:06:23.204 DEBUG [main] io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2026-02-15 03:06:23.204 DEBUG [main] io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+2026-02-15 03:06:23.204 DEBUG [main] io.netty.util.Recycler - -Dio.netty.recycler.chunkSize: 32
+2026-02-15 03:06:23.204 DEBUG [main] io.netty.util.Recycler - -Dio.netty.recycler.blocking: false
+2026-02-15 03:06:23.204 DEBUG [main] io.netty.util.Recycler - -Dio.netty.recycler.batchFastThreadLocalOnly: true
+2026-02-15 03:06:23.205 DEBUG [main] io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: adaptive
+2026-02-15 03:06:23.205 DEBUG [main] io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+2026-02-15 03:06:23.205 DEBUG [main] io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2026-02-15 03:06:23.206 DEBUG [main] i.n.b.ChannelInitializerExtensions - -Dio.netty.bootstrap.extensions: null
+2026-02-15 03:06:23.215 INFO  [DefaultDispatcher-worker-12] io.ktor.server.Application - Responding at http://0.0.0.0:8000
+2026-02-15 03:06:42.000 DEBUG [eventLoopGroupProxy-3-1] io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+2026-02-15 03:06:42.002 DEBUG [eventLoopGroupProxy-3-1] io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+2026-02-15 03:06:42.003 DEBUG [eventLoopGroupProxy-3-1] i.n.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@2080643f
+2026-02-15 03:08:59.206 DEBUG [main] i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+2026-02-15 03:08:59.212 DEBUG [main] i.n.util.internal.PlatformDependent0 - Java version: 23
+2026-02-15 03:08:59.212 DEBUG [main] i.n.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+2026-02-15 03:08:59.213 DEBUG [main] i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2026-02-15 03:08:59.214 DEBUG [main] i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe base methods: all available
+2026-02-15 03:08:59.214 DEBUG [main] i.n.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2026-02-15 03:08:59.214 DEBUG [main] i.n.util.internal.PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2026-02-15 03:08:59.214 DEBUG [main] i.n.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+2026-02-15 03:08:59.214 DEBUG [main] i.n.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: symbolic reference class is not accessible: class jdk.internal.misc.Unsafe, from class io.netty.util.internal.PlatformDependent0 (unnamed module @17503f6b)
+2026-02-15 03:08:59.215 DEBUG [main] i.n.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+2026-02-15 03:08:59.215 DEBUG [main] i.n.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2026-02-15 03:08:59.215 DEBUG [main] i.n.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/g9/2v3db5gn0jjd3qpx5qdbs6jm0000gn/T (java.io.tmpdir)
+2026-02-15 03:08:59.215 DEBUG [main] i.n.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2026-02-15 03:08:59.215 DEBUG [main] i.n.util.internal.PlatformDependent - Platform: MacOS
+2026-02-15 03:08:59.215 DEBUG [main] i.n.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+2026-02-15 03:08:59.216 DEBUG [main] io.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+2026-02-15 03:08:59.216 DEBUG [main] i.n.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2026-02-15 03:08:59.218 DEBUG [main] i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.workdir: /var/folders/g9/2v3db5gn0jjd3qpx5qdbs6jm0000gn/T (io.netty.tmpdir)
+2026-02-15 03:08:59.218 DEBUG [main] i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.deleteLibAfterLoading: true
+2026-02-15 03:08:59.218 DEBUG [main] i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.tryPatchShadedId: true
+2026-02-15 03:08:59.218 DEBUG [main] i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.detectNativeLibraryDuplicates: true
+2026-02-15 03:08:59.226 DEBUG [main] io.netty.channel.kqueue.KQueue - KQueue support is not available: could not load a native library: netty_transport_native_kqueue_aarch_64
+2026-02-15 03:08:59.232 DEBUG [main] io.netty.channel.epoll.Epoll - Epoll support is not available: null
+2026-02-15 03:08:59.235 DEBUG [main] i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 20
+2026-02-15 03:08:59.236 DEBUG [main] io.netty.channel.nio.NioIoHandler - -Dio.netty.noKeySetOptimization: false
+2026-02-15 03:08:59.236 DEBUG [main] io.netty.channel.nio.NioIoHandler - -Dio.netty.selectorAutoRebuildThreshold: 512
+2026-02-15 03:08:59.240 DEBUG [main] i.n.u.concurrent.GlobalEventExecutor - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+2026-02-15 03:08:59.242 DEBUG [main] i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2026-02-15 03:08:59.242 DEBUG [main] i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2026-02-15 03:08:59.245 DEBUG [main] i.n.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+2026-02-15 03:08:59.263 DEBUG [main] io.netty.channel.DefaultChannelId - -Dio.netty.processId: 97365 (auto-detected)
+2026-02-15 03:08:59.265 DEBUG [main] io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+2026-02-15 03:08:59.265 DEBUG [main] io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+2026-02-15 03:08:59.270 DEBUG [main] i.netty.util.NetUtilInitializations - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+2026-02-15 03:08:59.270 DEBUG [main] io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+2026-02-15 03:08:59.272 DEBUG [main] io.netty.channel.DefaultChannelId - -Dio.netty.machineId: f8:4d:89:ff:fe:8c:b3:48 (auto-detected)
+2026-02-15 03:08:59.276 DEBUG [main] io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+2026-02-15 03:08:59.276 DEBUG [main] io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+2026-02-15 03:08:59.286 DEBUG [main] i.n.buffer.AdaptiveByteBufAllocator - -Dio.netty.allocator.useCachedMagazinesForNonEventLoopThreads: false
+2026-02-15 03:08:59.292 DEBUG [main] io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2026-02-15 03:08:59.292 DEBUG [main] io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+2026-02-15 03:08:59.292 DEBUG [main] io.netty.util.Recycler - -Dio.netty.recycler.chunkSize: 32
+2026-02-15 03:08:59.292 DEBUG [main] io.netty.util.Recycler - -Dio.netty.recycler.blocking: false
+2026-02-15 03:08:59.292 DEBUG [main] io.netty.util.Recycler - -Dio.netty.recycler.batchFastThreadLocalOnly: true
+2026-02-15 03:08:59.294 DEBUG [main] io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: adaptive
+2026-02-15 03:08:59.294 DEBUG [main] io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+2026-02-15 03:08:59.294 DEBUG [main] io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2026-02-15 03:08:59.294 DEBUG [main] i.n.b.ChannelInitializerExtensions - -Dio.netty.bootstrap.extensions: null
+2026-02-15 03:08:59.303 INFO  [DefaultDispatcher-worker-14] io.ktor.server.Application - Responding at http://0.0.0.0:8000
+2026-02-15 03:09:16.580 DEBUG [eventLoopGroupProxy-3-1] io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+2026-02-15 03:09:16.580 DEBUG [eventLoopGroupProxy-3-1] io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+2026-02-15 03:09:16.581 DEBUG [eventLoopGroupProxy-3-1] i.n.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3b0c8e26
+2026-02-15 03:09:56.073 DEBUG [main] i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+2026-02-15 03:09:56.079 DEBUG [main] i.n.util.internal.PlatformDependent0 - Java version: 23
+2026-02-15 03:09:56.079 DEBUG [main] i.n.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+2026-02-15 03:09:56.080 DEBUG [main] i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2026-02-15 03:09:56.080 DEBUG [main] i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe base methods: all available
+2026-02-15 03:09:56.080 DEBUG [main] i.n.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2026-02-15 03:09:56.081 DEBUG [main] i.n.util.internal.PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2026-02-15 03:09:56.081 DEBUG [main] i.n.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+2026-02-15 03:09:56.081 DEBUG [main] i.n.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: symbolic reference class is not accessible: class jdk.internal.misc.Unsafe, from class io.netty.util.internal.PlatformDependent0 (unnamed module @17503f6b)
+2026-02-15 03:09:56.081 DEBUG [main] i.n.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+2026-02-15 03:09:56.081 DEBUG [main] i.n.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2026-02-15 03:09:56.081 DEBUG [main] i.n.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/g9/2v3db5gn0jjd3qpx5qdbs6jm0000gn/T (java.io.tmpdir)
+2026-02-15 03:09:56.081 DEBUG [main] i.n.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2026-02-15 03:09:56.081 DEBUG [main] i.n.util.internal.PlatformDependent - Platform: MacOS
+2026-02-15 03:09:56.082 DEBUG [main] i.n.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+2026-02-15 03:09:56.082 DEBUG [main] io.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+2026-02-15 03:09:56.082 DEBUG [main] i.n.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2026-02-15 03:09:56.084 DEBUG [main] i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.workdir: /var/folders/g9/2v3db5gn0jjd3qpx5qdbs6jm0000gn/T (io.netty.tmpdir)
+2026-02-15 03:09:56.084 DEBUG [main] i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.deleteLibAfterLoading: true
+2026-02-15 03:09:56.084 DEBUG [main] i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.tryPatchShadedId: true
+2026-02-15 03:09:56.084 DEBUG [main] i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.detectNativeLibraryDuplicates: true
+2026-02-15 03:09:56.093 DEBUG [main] io.netty.channel.kqueue.KQueue - KQueue support is not available: could not load a native library: netty_transport_native_kqueue_aarch_64
+2026-02-15 03:09:56.098 DEBUG [main] io.netty.channel.epoll.Epoll - Epoll support is not available: null
+2026-02-15 03:09:56.101 DEBUG [main] i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 20
+2026-02-15 03:09:56.102 DEBUG [main] io.netty.channel.nio.NioIoHandler - -Dio.netty.noKeySetOptimization: false
+2026-02-15 03:09:56.102 DEBUG [main] io.netty.channel.nio.NioIoHandler - -Dio.netty.selectorAutoRebuildThreshold: 512
+2026-02-15 03:09:56.105 DEBUG [main] i.n.u.concurrent.GlobalEventExecutor - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+2026-02-15 03:09:56.106 DEBUG [main] i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2026-02-15 03:09:56.106 DEBUG [main] i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2026-02-15 03:09:56.109 DEBUG [main] i.n.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+2026-02-15 03:09:56.125 DEBUG [main] io.netty.channel.DefaultChannelId - -Dio.netty.processId: 97854 (auto-detected)
+2026-02-15 03:09:56.126 DEBUG [main] io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+2026-02-15 03:09:56.126 DEBUG [main] io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+2026-02-15 03:09:56.130 DEBUG [main] i.netty.util.NetUtilInitializations - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+2026-02-15 03:09:56.131 DEBUG [main] io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+2026-02-15 03:09:56.132 DEBUG [main] io.netty.channel.DefaultChannelId - -Dio.netty.machineId: f8:4d:89:ff:fe:8c:b3:48 (auto-detected)
+2026-02-15 03:09:56.136 DEBUG [main] io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+2026-02-15 03:09:56.136 DEBUG [main] io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+2026-02-15 03:09:56.145 DEBUG [main] i.n.buffer.AdaptiveByteBufAllocator - -Dio.netty.allocator.useCachedMagazinesForNonEventLoopThreads: false
+2026-02-15 03:09:56.149 DEBUG [main] io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2026-02-15 03:09:56.150 DEBUG [main] io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+2026-02-15 03:09:56.150 DEBUG [main] io.netty.util.Recycler - -Dio.netty.recycler.chunkSize: 32
+2026-02-15 03:09:56.150 DEBUG [main] io.netty.util.Recycler - -Dio.netty.recycler.blocking: false
+2026-02-15 03:09:56.150 DEBUG [main] io.netty.util.Recycler - -Dio.netty.recycler.batchFastThreadLocalOnly: true
+2026-02-15 03:09:56.151 DEBUG [main] io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: adaptive
+2026-02-15 03:09:56.151 DEBUG [main] io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+2026-02-15 03:09:56.151 DEBUG [main] io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2026-02-15 03:09:56.152 DEBUG [main] i.n.b.ChannelInitializerExtensions - -Dio.netty.bootstrap.extensions: null
+2026-02-15 03:09:56.160 INFO  [DefaultDispatcher-worker-14] io.ktor.server.Application - Responding at http://0.0.0.0:8000
+2026-02-15 03:10:09.322 DEBUG [eventLoopGroupProxy-3-1] io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+2026-02-15 03:10:09.322 DEBUG [eventLoopGroupProxy-3-1] io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+2026-02-15 03:10:09.322 DEBUG [eventLoopGroupProxy-3-1] i.n.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@2accee32

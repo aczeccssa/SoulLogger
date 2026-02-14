@@ -2,6 +2,9 @@ package com.lestere.opensource.health
 
 import com.lestere.opensource.logger.SoulLoggerPluginConfiguration
 import com.lestere.opensource.logger.SoulLoggerProvider
+import com.lestere.opensource.models.HealthCheckItemResponse
+import com.lestere.opensource.models.HealthCheckResponse
+import com.lestere.opensource.models.HealthDetailValue
 import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
@@ -23,7 +26,7 @@ data class HealthStatus(
 data class CheckResult(
     val status: HealthStatus.Status,
     val message: String? = null,
-    val details: Map<String, Any>? = null
+    val details: Map<String, HealthDetailValue>? = null
 )
 
 class HealthCheckManager(
@@ -63,18 +66,18 @@ class HealthCheckManager(
         return HealthStatus(overallStatus, results)
     }
     
-    fun checkSync(): Map<String, Any> {
+    fun checkSync(): HealthCheckResponse {
         val status = check()
-        return mapOf(
-            "status" to status.status.toSimpleString(),
-            "checks" to status.checks.mapValues {
-                mapOf(
-                    "status" to it.value.status.toSimpleString(),
-                    "message" to (it.value.message ?: ""),
-                    "details" to (it.value.details ?: emptyMap<String, Any>())
+        return HealthCheckResponse(
+            status = status.status.toSimpleString(),
+            checks = status.checks.mapValues { (_, v) ->
+                HealthCheckItemResponse(
+                    status = v.status.toSimpleString(),
+                    message = v.message ?: "",
+                    details = v.details ?: emptyMap()
                 )
             },
-            "timestamp" to status.timestamp
+            timestamp = status.timestamp
         )
     }
     
@@ -95,7 +98,7 @@ class HealthCheckManager(
                 "buffer" to CheckResult(
                     HealthStatus.Status.HEALTHY,
                     null,
-                    mapOf("size" to bufferSize)
+                    mapOf("size" to HealthDetailValue.IntValue(bufferSize))
                 )
             }
         } catch (e: Exception) {
@@ -117,17 +120,23 @@ class HealthCheckManager(
                 usableSpace < threshold / 10 -> "disk" to CheckResult(
                     HealthStatus.Status.UNHEALTHY,
                     "Critical: ${usableSpace / 1024 / 1024}MB available",
-                    mapOf("usableSpace" to usableSpace, "threshold" to threshold)
+                    mapOf(
+                        "usableSpace" to HealthDetailValue.LongValue(usableSpace),
+                        "threshold" to HealthDetailValue.LongValue(threshold)
+                    )
                 )
                 usableSpace < threshold -> "disk" to CheckResult(
                     HealthStatus.Status.DEGRADED,
                     "Low disk: ${usableSpace / 1024 / 1024}MB",
-                    mapOf("usableSpace" to usableSpace, "threshold" to threshold)
+                    mapOf(
+                        "usableSpace" to HealthDetailValue.LongValue(usableSpace),
+                        "threshold" to HealthDetailValue.LongValue(threshold)
+                    )
                 )
                 else -> "disk" to CheckResult(
                     HealthStatus.Status.HEALTHY,
                     null,
-                    mapOf("usableSpace" to usableSpace)
+                    mapOf("usableSpace" to HealthDetailValue.LongValue(usableSpace))
                 )
             }
         } catch (e: Exception) {
@@ -148,17 +157,29 @@ class HealthCheckManager(
                 usage > 0.95 -> "queue" to CheckResult(
                     HealthStatus.Status.UNHEALTHY,
                     "Queue critical: ${(usage * 100).toInt()}% full",
-                    mapOf("size" to queueSize, "capacity" to capacity, "usage" to usage)
+                    mapOf(
+                        "size" to HealthDetailValue.IntValue(queueSize),
+                        "capacity" to HealthDetailValue.IntValue(capacity),
+                        "usage" to HealthDetailValue.DoubleValue(usage)
+                    )
                 )
                 usage > 0.8 -> "queue" to CheckResult(
                     HealthStatus.Status.DEGRADED,
                     "Queue high: ${(usage * 100).toInt()}% full",
-                    mapOf("size" to queueSize, "capacity" to capacity, "usage" to usage)
+                    mapOf(
+                        "size" to HealthDetailValue.IntValue(queueSize),
+                        "capacity" to HealthDetailValue.IntValue(capacity),
+                        "usage" to HealthDetailValue.DoubleValue(usage)
+                    )
                 )
                 else -> "queue" to CheckResult(
                     HealthStatus.Status.HEALTHY,
                     null,
-                    mapOf("size" to queueSize, "capacity" to capacity, "usage" to usage)
+                    mapOf(
+                        "size" to HealthDetailValue.IntValue(queueSize),
+                        "capacity" to HealthDetailValue.IntValue(capacity),
+                        "usage" to HealthDetailValue.DoubleValue(usage)
+                    )
                 )
             }
         } catch (e: Exception) {
@@ -187,7 +208,7 @@ class HealthCheckManager(
                 else -> "logDirectory" to CheckResult(
                     HealthStatus.Status.HEALTHY,
                     null,
-                    mapOf("path" to path.toString())
+                    mapOf("path" to HealthDetailValue.StringValue(path.toString()))
                 )
             }
         } catch (e: Exception) {
@@ -205,13 +226,13 @@ class HealthCheckManager(
                 "logback" to CheckResult(
                     HealthStatus.Status.HEALTHY,
                     "Logback enabled",
-                    mapOf("enabled" to true)
+                    mapOf("enabled" to HealthDetailValue.BooleanValue(true))
                 )
             } else {
                 "logback" to CheckResult(
                     HealthStatus.Status.DEGRADED,
                     "Logback disabled",
-                    mapOf("enabled" to false)
+                    mapOf("enabled" to HealthDetailValue.BooleanValue(false))
                 )
             }
         } catch (e: Exception) {

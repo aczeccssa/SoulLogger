@@ -3,6 +3,7 @@ package com.lestere.opensource.config
 import com.lestere.opensource.logger.SoulLogger
 import com.lestere.opensource.logger.SoulLogger.Level
 import com.lestere.opensource.logger.SoulLoggerPluginConfiguration
+import com.lestere.opensource.models.ConfigResponse
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -99,15 +100,15 @@ class DynamicConfigManager(
         }
     }
     
-    fun getCurrentConfig(): Map<String, Any> = mapOf(
-        "level" to config.level.name,
-        "queueCapacity" to config.queueCapacity,
-        "maxFileSize" to config.maxFileSize,
-        "enableConsole" to config.enableConsole,
-        "enableFile" to config.enableFile,
-        "enableMasking" to config.enableMasking,
-        "enableLogback" to config.enableLogback,
-        "outputFormat" to config.outputFormat.name
+    fun getCurrentConfig(): ConfigResponse = ConfigResponse(
+        level = config.level.name,
+        queueCapacity = config.queueCapacity,
+        maxFileSize = config.maxFileSize,
+        enableConsole = config.enableConsole,
+        enableFile = config.enableFile,
+        enableMasking = config.enableMasking,
+        enableLogback = config.enableLogback,
+        outputFormat = config.outputFormat.name
     )
     
     fun shutdown() {

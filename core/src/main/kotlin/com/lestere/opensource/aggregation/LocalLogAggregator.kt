@@ -3,6 +3,7 @@ package com.lestere.opensource.aggregation
 import com.lestere.opensource.logger.Logger
 import com.lestere.opensource.logger.SoulLogger
 import com.lestere.opensource.logger.SoulLoggerProvider
+import com.lestere.opensource.models.StatisticsResponse
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -167,7 +168,7 @@ class LocalLogAggregator(
         return aggregationEngine.aggregate(logs, request)
     }
     
-    fun getStatistics(): Map<String, Any?> {
+    fun getStatistics(): StatisticsResponse {
         val logs = indexer.getRecent(Int.MAX_VALUE)
         return aggregationEngine.getStatistics(logs)
     }

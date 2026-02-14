@@ -1,0 +1,144 @@
+Version,Timestamp,Level,Thread,Entry,Command
+0.0.1-dev,2026-02-14T19:05:32.706642Z,INFO,main(1),com.lestere.opensource.logger.SoulLoggerProvider,"SoulLogger initialized in DEVELOPMENT mode (Level: DEBUG, Logback: true)"
+0.0.1-dev,2026-02-14T19:05:32.721813Z,INFO,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Application launched in 2026.02.14T19:05:32
+0.0.1-dev,2026-02-14T19:05:32.722749Z,INFO,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Running in DEVELOPMENT mode with introspection enabled
+0.0.1-dev,2026-02-14T19:05:32.723637Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Log reflex route registered at /soul/logger
+0.0.1-dev,2026-02-14T19:05:32.726554Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Analysis routes registered
+0.0.1-dev,2026-02-14T19:05:32.728522Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Config management route registered at /soul/logger/config
+0.0.1-dev,2026-02-14T19:05:32.730275Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Runtime level route registered at /soul/logger/level
+0.0.1-dev,2026-02-14T19:05:32.731907Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Health check route registered at /soul/logger/health
+0.0.1-dev,2026-02-14T19:05:32.735007Z,INFO,main(1),com.lestere.opensource.config.HotReloader,HotReloader started with strategy: WATCH
+0.0.1-dev,2026-02-14T19:05:32.735047Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Hot reloader started
+0.0.1-dev,2026-02-14T19:05:33.678322Z,INFO,DefaultDispatcher-worker-12(40),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,==============================================
+0.0.1-dev,2026-02-14T19:05:33.678750Z,INFO,DefaultDispatcher-worker-12(40),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,SoulLogger Sample Application Started
+0.0.1-dev,2026-02-14T19:05:33.678943Z,INFO,DefaultDispatcher-worker-12(40),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,Demo:   http://localhost:8000/demo
+0.0.1-dev,2026-02-14T19:05:51.689760Z,INFO,main(1),com.lestere.opensource.logger.SoulLoggerProvider,"SoulLogger initialized in DEVELOPMENT mode (Level: DEBUG, Logback: true)"
+0.0.1-dev,2026-02-14T19:05:51.704076Z,INFO,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Application launched in 2026.02.14T19:05:51
+0.0.1-dev,2026-02-14T19:05:51.704863Z,INFO,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Running in DEVELOPMENT mode with introspection enabled
+0.0.1-dev,2026-02-14T19:05:51.705831Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Log reflex route registered at /soul/logger
+0.0.1-dev,2026-02-14T19:05:51.708112Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Analysis routes registered
+0.0.1-dev,2026-02-14T19:05:51.709696Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Config management route registered at /soul/logger/config
+0.0.1-dev,2026-02-14T19:05:51.711332Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Runtime level route registered at /soul/logger/level
+0.0.1-dev,2026-02-14T19:05:51.712753Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Health check route registered at /soul/logger/health
+0.0.1-dev,2026-02-14T19:05:51.715146Z,INFO,main(1),com.lestere.opensource.config.HotReloader,HotReloader started with strategy: WATCH
+0.0.1-dev,2026-02-14T19:05:51.715224Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Hot reloader started
+0.0.1-dev,2026-02-14T19:05:52.665083Z,INFO,DefaultDispatcher-worker-2(29),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,Demo:   http://localhost:8000/demo
+0.0.1-dev,2026-02-14T19:05:52.665186Z,INFO,DefaultDispatcher-worker-2(29),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,==============================================
+0.0.1-dev,2026-02-14T19:05:52.665112Z,INFO,DefaultDispatcher-worker-2(29),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,API:    http://localhost:8000/api/v1
+0.0.1-dev,2026-02-14T19:05:52.665140Z,INFO,DefaultDispatcher-worker-2(29),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,Health: http://localhost:8000/health
+0.0.1-dev,2026-02-14T19:05:52.664839Z,INFO,DefaultDispatcher-worker-2(29),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,==============================================
+0.0.1-dev,2026-02-14T19:05:52.664987Z,INFO,DefaultDispatcher-worker-2(29),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,SoulLogger Sample Application Started
+0.0.1-dev,2026-02-14T19:05:52.665019Z,INFO,DefaultDispatcher-worker-2(29),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,==============================================
+0.0.1-dev,2026-02-14T19:05:52.665048Z,INFO,DefaultDispatcher-worker-2(29),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,Web UI: http://localhost:8000/webui/
+0.0.1-dev,2026-02-14T19:05:33.679155Z,INFO,DefaultDispatcher-worker-12(40),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,==============================================
+0.0.1-dev,2026-02-14T19:05:33.679002Z,INFO,DefaultDispatcher-worker-12(40),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,API:    http://localhost:8000/api/v1
+0.0.1-dev,2026-02-14T19:05:33.679091Z,INFO,DefaultDispatcher-worker-12(40),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,Health: http://localhost:8000/health
+0.0.1-dev,2026-02-14T19:05:33.678820Z,INFO,DefaultDispatcher-worker-12(40),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,==============================================
+0.0.1-dev,2026-02-14T19:05:33.678883Z,INFO,DefaultDispatcher-worker-12(40),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,Web UI: http://localhost:8000/webui/
+0.0.1-dev,2026-02-14T19:06:23.097315Z,INFO,main(1),com.lestere.opensource.logger.SoulLoggerProvider,"SoulLogger initialized in DEVELOPMENT mode (Level: DEBUG, Logback: true)"
+0.0.1-dev,2026-02-14T19:06:23.110548Z,INFO,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Application launched in 2026.02.14T19:06:23
+0.0.1-dev,2026-02-14T19:06:23.111285Z,INFO,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Running in DEVELOPMENT mode with introspection enabled
+0.0.1-dev,2026-02-14T19:06:23.112121Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Log reflex route registered at /soul/logger
+0.0.1-dev,2026-02-14T19:06:23.114756Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Analysis routes registered
+0.0.1-dev,2026-02-14T19:06:23.116606Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Config management route registered at /soul/logger/config
+0.0.1-dev,2026-02-14T19:06:23.118364Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Runtime level route registered at /soul/logger/level
+0.0.1-dev,2026-02-14T19:06:23.119827Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Health check route registered at /soul/logger/health
+0.0.1-dev,2026-02-14T19:06:23.122593Z,INFO,main(1),com.lestere.opensource.config.HotReloader,HotReloader started with strategy: WATCH
+0.0.1-dev,2026-02-14T19:06:23.122633Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Hot reloader started
+0.0.1-dev,2026-02-14T19:06:24.075834Z,INFO,DefaultDispatcher-worker-12(40),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,API:    http://localhost:8000/api/v1
+0.0.1-dev,2026-02-14T19:06:24.075868Z,INFO,DefaultDispatcher-worker-12(40),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,Health: http://localhost:8000/health
+0.0.1-dev,2026-02-14T19:06:24.075905Z,INFO,DefaultDispatcher-worker-12(40),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,==============================================
+0.0.1-dev,2026-02-14T19:06:24.075389Z,INFO,DefaultDispatcher-worker-12(40),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,==============================================
+0.0.1-dev,2026-02-14T19:06:24.075671Z,INFO,DefaultDispatcher-worker-12(40),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,SoulLogger Sample Application Started
+0.0.1-dev,2026-02-14T19:06:24.075712Z,INFO,DefaultDispatcher-worker-12(40),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,==============================================
+0.0.1-dev,2026-02-14T19:06:24.075755Z,INFO,DefaultDispatcher-worker-12(40),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,Web UI: http://localhost:8000/webui/
+0.0.1-dev,2026-02-14T19:06:24.075790Z,INFO,DefaultDispatcher-worker-12(40),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,Demo:   http://localhost:8000/demo
+0.0.1-dev,2026-02-14T19:06:42.073183Z,INFO,eventLoopGroupProxy-4-1(52),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2,Call localhost --> /soul/logger/health
+0.0.1-dev,2026-02-14T19:06:42.124608Z,INFO,eventLoopGroupProxy-4-1(52),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3,Response localhost --> /soul/logger/health (200 OK && 62 bytes)
+0.0.1-dev,2026-02-14T19:06:42.146977Z,INFO,eventLoopGroupProxy-4-2(54),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2,Call localhost --> /soul/logger/health/live
+0.0.1-dev,2026-02-14T19:06:42.150070Z,WARN,eventLoopGroupProxy-4-2(54),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3,Response localhost --> /soul/logger/health/live (Unknown status && 34 bytes)
+0.0.1-dev,2026-02-14T19:06:42.164500Z,INFO,eventLoopGroupProxy-4-3(56),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2,Call localhost --> /soul/logger/health/ready
+0.0.1-dev,2026-02-14T19:06:42.167664Z,INFO,eventLoopGroupProxy-4-3(56),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3,Response localhost --> /soul/logger/health/ready (200 OK && 62 bytes)
+0.0.1-dev,2026-02-14T19:07:11.642929Z,INFO,eventLoopGroupProxy-4-4(58),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2,Call localhost --> /soul/logger/health/live
+0.0.1-dev,2026-02-14T19:07:11.651662Z,WARN,eventLoopGroupProxy-4-4(58),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3,Response localhost --> /soul/logger/health/live (Unknown status && 34 bytes)
+0.0.1-dev,2026-02-14T19:07:23.075493Z,DEBUG,DefaultDispatcher-worker-16(45),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$5,Heartbeat - application running
+0.0.1-dev,2026-02-14T19:08:59.176672Z,INFO,main(1),com.lestere.opensource.logger.SoulLoggerProvider,"SoulLogger initialized in DEVELOPMENT mode (Level: DEBUG, Logback: true)"
+0.0.1-dev,2026-02-14T19:08:59.190134Z,INFO,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Application launched in 2026.02.14T19:08:59
+0.0.1-dev,2026-02-14T19:08:59.190947Z,INFO,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Running in DEVELOPMENT mode with introspection enabled
+0.0.1-dev,2026-02-14T19:08:59.192030Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Log reflex route registered at /soul/logger
+0.0.1-dev,2026-02-14T19:08:59.195145Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Analysis routes registered
+0.0.1-dev,2026-02-14T19:08:59.196787Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Config management route registered at /soul/logger/config
+0.0.1-dev,2026-02-14T19:08:59.198428Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Runtime level route registered at /soul/logger/level
+0.0.1-dev,2026-02-14T19:08:59.199966Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Health check route registered at /soul/logger/health
+0.0.1-dev,2026-02-14T19:08:59.202264Z,INFO,main(1),com.lestere.opensource.config.HotReloader,HotReloader started with strategy: WATCH
+0.0.1-dev,2026-02-14T19:08:59.202304Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Hot reloader started
+0.0.1-dev,2026-02-14T19:09:00.152856Z,INFO,DefaultDispatcher-worker-14(42),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,==============================================
+0.0.1-dev,2026-02-14T19:09:00.152901Z,INFO,DefaultDispatcher-worker-14(42),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,Web UI: http://localhost:8000/webui/
+0.0.1-dev,2026-02-14T19:09:00.152964Z,INFO,DefaultDispatcher-worker-14(42),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,Demo:   http://localhost:8000/demo
+0.0.1-dev,2026-02-14T19:09:00.153010Z,INFO,DefaultDispatcher-worker-14(42),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,API:    http://localhost:8000/api/v1
+0.0.1-dev,2026-02-14T19:09:00.153162Z,INFO,DefaultDispatcher-worker-14(42),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,==============================================
+0.0.1-dev,2026-02-14T19:09:00.153055Z,INFO,DefaultDispatcher-worker-14(42),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,Health: http://localhost:8000/health
+0.0.1-dev,2026-02-14T19:09:00.152466Z,INFO,DefaultDispatcher-worker-14(42),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,==============================================
+0.0.1-dev,2026-02-14T19:09:00.152803Z,INFO,DefaultDispatcher-worker-14(42),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,SoulLogger Sample Application Started
+0.0.1-dev,2026-02-14T19:09:16.628167Z,INFO,eventLoopGroupProxy-4-1(51),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2,Call localhost --> /soul/logger/health/live
+0.0.1-dev,2026-02-14T19:09:16.654988Z,WARN,eventLoopGroupProxy-4-1(51),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3,Response localhost --> /soul/logger/health/live (Unknown status && 34 bytes)
+0.0.1-dev,2026-02-14T19:09:16.674477Z,INFO,eventLoopGroupProxy-4-2(53),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2,Call localhost --> /soul/logger/health/ready
+0.0.1-dev,2026-02-14T19:09:16.685172Z,INFO,eventLoopGroupProxy-4-2(53),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3,Response localhost --> /soul/logger/health/ready (200 OK && 62 bytes)
+0.0.1-dev,2026-02-14T19:09:16.696197Z,INFO,eventLoopGroupProxy-4-3(55),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2,Call localhost --> /soul/logger/health/buffer
+0.0.1-dev,2026-02-14T19:09:16.704701Z,WARN,eventLoopGroupProxy-4-3(55),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3,Response localhost --> /soul/logger/health/buffer (Unknown status && 62 bytes)
+0.0.1-dev,2026-02-14T19:09:16.720803Z,INFO,eventLoopGroupProxy-4-4(57),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2,Call localhost --> /soul/logger/health/disk
+0.0.1-dev,2026-02-14T19:09:16.723374Z,WARN,eventLoopGroupProxy-4-4(57),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3,Response localhost --> /soul/logger/health/disk (Unknown status && 62 bytes)
+0.0.1-dev,2026-02-14T19:09:16.736571Z,INFO,eventLoopGroupProxy-4-5(59),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2,Call localhost --> /soul/logger/health/queue
+0.0.1-dev,2026-02-14T19:09:16.738097Z,WARN,eventLoopGroupProxy-4-5(59),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3,Response localhost --> /soul/logger/health/queue (Unknown status && 62 bytes)
+0.0.1-dev,2026-02-14T19:09:56.046459Z,INFO,main(1),com.lestere.opensource.logger.SoulLoggerProvider,"SoulLogger initialized in DEVELOPMENT mode (Level: DEBUG, Logback: true)"
+0.0.1-dev,2026-02-14T19:09:56.059598Z,INFO,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Application launched in 2026.02.14T19:09:56
+0.0.1-dev,2026-02-14T19:09:56.060462Z,INFO,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Running in DEVELOPMENT mode with introspection enabled
+0.0.1-dev,2026-02-14T19:09:56.061312Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Log reflex route registered at /soul/logger
+0.0.1-dev,2026-02-14T19:09:56.063933Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Analysis routes registered
+0.0.1-dev,2026-02-14T19:09:56.065781Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Config management route registered at /soul/logger/config
+0.0.1-dev,2026-02-14T19:09:56.067327Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Runtime level route registered at /soul/logger/level
+0.0.1-dev,2026-02-14T19:09:56.068675Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Health check route registered at /soul/logger/health
+0.0.1-dev,2026-02-14T19:09:56.071122Z,INFO,main(1),com.lestere.opensource.config.HotReloader,HotReloader started with strategy: WATCH
+0.0.1-dev,2026-02-14T19:09:56.071175Z,DEBUG,main(1),com.lestere.opensource.logger.SoulLoggerPluginKt,Hot reloader started
+0.0.1-dev,2026-02-14T19:09:57.024007Z,INFO,DefaultDispatcher-worker-14(42),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,==============================================
+0.0.1-dev,2026-02-14T19:09:57.024623Z,INFO,DefaultDispatcher-worker-14(42),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,Demo:   http://localhost:8000/demo
+0.0.1-dev,2026-02-14T19:09:57.024681Z,INFO,DefaultDispatcher-worker-14(42),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,API:    http://localhost:8000/api/v1
+0.0.1-dev,2026-02-14T19:09:57.024738Z,INFO,DefaultDispatcher-worker-14(42),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,Health: http://localhost:8000/health
+0.0.1-dev,2026-02-14T19:09:57.024797Z,INFO,DefaultDispatcher-worker-14(42),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,==============================================
+0.0.1-dev,2026-02-14T19:09:57.024419Z,INFO,DefaultDispatcher-worker-14(42),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,SoulLogger Sample Application Started
+0.0.1-dev,2026-02-14T19:09:57.024490Z,INFO,DefaultDispatcher-worker-14(42),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,==============================================
+0.0.1-dev,2026-02-14T19:09:57.024552Z,INFO,DefaultDispatcher-worker-14(42),com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4,Web UI: http://localhost:8000/webui/
+0.0.1-dev,2026-02-14T19:10:09.376541Z,INFO,eventLoopGroupProxy-4-1(52),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2,Call localhost --> /soul/logger/health/live
+0.0.1-dev,2026-02-14T19:10:09.398706Z,WARN,eventLoopGroupProxy-4-1(52),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3,Response localhost --> /soul/logger/health/live (Unknown status && 62 bytes)
+0.0.1-dev,2026-02-14T19:10:13.712489Z,INFO,eventLoopGroupProxy-4-2(54),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2,Call localhost --> /soul/logger/config
+0.0.1-dev,2026-02-14T19:10:13.715428Z,WARN,eventLoopGroupProxy-4-2(54),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3,Response localhost --> /soul/logger/config (Unknown status && 62 bytes)
+0.0.1-dev,2026-02-14T19:10:33.163343Z,INFO,eventLoopGroupProxy-4-3(56),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2,Call localhost --> /soul/logger/level/global
+0.0.1-dev,2026-02-14T19:10:33.180197Z,WARN,eventLoopGroupProxy-4-3(56),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3,Response localhost --> /soul/logger/level/global (Unknown status && 55 bytes)
+0.0.1-dev,2026-02-14T19:10:33.196434Z,INFO,eventLoopGroupProxy-4-4(58),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2,Call localhost --> /soul/logger/level/global
+0.0.1-dev,2026-02-14T19:10:33.233667Z,INFO,eventLoopGroupProxy-4-4(58),com.lestere.opensource.config.RuntimeLevelManager,Global log level set to: WARN
+0.0.1-dev,2026-02-14T19:10:33.236881Z,WARN,eventLoopGroupProxy-4-4(58),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3,Response localhost --> /soul/logger/level/global (Unknown status && 62 bytes)
+0.0.1-dev,2026-02-14T19:10:33.251445Z,INFO,eventLoopGroupProxy-4-5(64),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2,Call localhost --> /soul/logger/level/global
+0.0.1-dev,2026-02-14T19:10:33.252011Z,WARN,eventLoopGroupProxy-4-5(64),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3,Response localhost --> /soul/logger/level/global (Unknown status && 55 bytes)
+0.0.1-dev,2026-02-14T19:10:37.971521Z,INFO,eventLoopGroupProxy-4-6(66),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2,Call localhost --> /health
+0.0.1-dev,2026-02-14T19:10:38.011905Z,WARN,eventLoopGroupProxy-4-6(66),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3,Response localhost --> /health (Unknown status && 62 bytes)
+0.0.1-dev,2026-02-14T19:10:38.025289Z,INFO,eventLoopGroupProxy-4-7(67),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2,Call localhost --> /demo
+0.0.1-dev,2026-02-14T19:10:38.029239Z,WARN,eventLoopGroupProxy-4-7(67),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3,Response localhost --> /demo (Unknown status && 62 bytes)
+0.0.1-dev,2026-02-14T19:10:38.042877Z,INFO,eventLoopGroupProxy-4-8(68),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2,Call localhost --> /demo/metrics
+0.0.1-dev,2026-02-14T19:10:38.046875Z,WARN,eventLoopGroupProxy-4-8(68),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3,Response localhost --> /demo/metrics (Unknown status && 62 bytes)
+0.0.1-dev,2026-02-14T19:10:38.057408Z,INFO,eventLoopGroupProxy-4-9(69),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2,Call localhost --> /demo/health
+0.0.1-dev,2026-02-14T19:10:38.059977Z,WARN,eventLoopGroupProxy-4-9(69),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3,Response localhost --> /demo/health (Unknown status && 62 bytes)
+0.0.1-dev,2026-02-14T19:10:43.427656Z,DEBUG,eventLoopGroupProxy-4-10(70),com.lestere.opensource.soullogger.sample.WebUIKt$configureWebUI$2$3$1,API: /api/v1/health called
+0.0.1-dev,2026-02-14T19:10:43.421678Z,INFO,eventLoopGroupProxy-4-10(70),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2,Call localhost --> /api/v1/health
+0.0.1-dev,2026-02-14T19:10:43.440337Z,WARN,eventLoopGroupProxy-4-10(70),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3,Response localhost --> /api/v1/health (Unknown status && 62 bytes)
+0.0.1-dev,2026-02-14T19:10:43.456887Z,INFO,eventLoopGroupProxy-4-1(52),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2,Call localhost --> /api/v1/stats
+0.0.1-dev,2026-02-14T19:10:43.457229Z,DEBUG,eventLoopGroupProxy-4-1(52),com.lestere.opensource.soullogger.sample.WebUIKt$configureWebUI$2$3$2,API: /api/v1/stats called
+0.0.1-dev,2026-02-14T19:10:43.463233Z,WARN,eventLoopGroupProxy-4-1(52),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3,Response localhost --> /api/v1/stats (Unknown status && 62 bytes)
+0.0.1-dev,2026-02-14T19:10:43.474974Z,INFO,eventLoopGroupProxy-4-2(54),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2,Call localhost --> /api/v1/config
+0.0.1-dev,2026-02-14T19:10:43.475295Z,DEBUG,eventLoopGroupProxy-4-2(54),com.lestere.opensource.soullogger.sample.WebUIKt$configureWebUI$2$3$6,API: /api/v1/config called
+0.0.1-dev,2026-02-14T19:10:43.478081Z,WARN,eventLoopGroupProxy-4-2(54),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3,Response localhost --> /api/v1/config (Unknown status && 62 bytes)
+0.0.1-dev,2026-02-14T19:10:43.488635Z,INFO,eventLoopGroupProxy-4-3(56),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2,Call localhost --> /api/v1/stats/level-distribution
+0.0.1-dev,2026-02-14T19:10:43.488932Z,DEBUG,eventLoopGroupProxy-4-3(56),com.lestere.opensource.soullogger.sample.WebUIKt$configureWebUI$2$3$3,API: /api/v1/stats/level-distribution called
+0.0.1-dev,2026-02-14T19:10:43.490969Z,WARN,eventLoopGroupProxy-4-3(56),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3,Response localhost --> /api/v1/stats/level-distribution (Unknown status && 62 bytes)
+0.0.1-dev,2026-02-14T19:10:48.613326Z,INFO,eventLoopGroupProxy-4-4(58),com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2,Call localhost --> /soul/logger/config/level
+0.0.1-dev,2026-02-14T19:11:07.958363Z,ERROR,eventLoopGroupProxy-4-7(67),com.lestere.opensource.soullogger.sample.DemoRoutesKt$configureDemoRoutes$1$1$15,java.lang.IllegalStateException: Load test error 3
+0.0.1-dev,2026-02-14T19:11:08.003133Z,ERROR,eventLoopGroupProxy-4-10(70),com.lestere.opensource.soullogger.sample.DemoRoutesKt$configureDemoRoutes$1$1$11,java.lang.IllegalStateException: Demo error for testing

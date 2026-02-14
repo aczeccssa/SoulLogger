@@ -4,6 +4,11 @@ import com.lestere.opensource.config.DynamicConfigManager
 import com.lestere.opensource.logger.SoulLogger
 import com.lestere.opensource.logger.SoulLogger.Level
 import com.lestere.opensource.logger.SoulLoggerPluginConfiguration
+import com.lestere.opensource.models.CapacityUpdateResponse
+import com.lestere.opensource.models.EnableUpdateResponse
+import com.lestere.opensource.models.ErrorResponse
+import com.lestere.opensource.models.LevelUpdateResponse
+import com.lestere.opensource.models.SizeUpdateResponse
 import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.request.*
@@ -24,9 +29,9 @@ fun Application.configureConfigManagement(config: SoulLoggerPluginConfiguration,
                 try {
                     val level = Level.valueOf(request.level.uppercase())
                     configManager.updateLevel(level)
-                    call.respond(mapOf("success" to true, "level" to level.name))
+                    call.respond(LevelUpdateResponse(success = true, level = level.name))
                 } catch (e: Exception) {
-                    call.respond(HttpStatusCode.BadRequest, mapOf("error" to e.message))
+                    call.respond(HttpStatusCode.BadRequest, ErrorResponse(error = e.message ?: "Unknown error"))
                 }
             }
             
@@ -34,9 +39,9 @@ fun Application.configureConfigManagement(config: SoulLoggerPluginConfiguration,
                 val request = call.receive<QueueCapacityRequest>()
                 if (request.capacity > 0) {
                     configManager.updateQueueCapacity(request.capacity)
-                    call.respond(mapOf("success" to true, "capacity" to request.capacity))
+                    call.respond(CapacityUpdateResponse(success = true, capacity = request.capacity))
                 } else {
-                    call.respond(HttpStatusCode.BadRequest, mapOf("error" to "Invalid capacity"))
+                    call.respond(HttpStatusCode.BadRequest, ErrorResponse(error = "Invalid capacity"))
                 }
             }
             
@@ -44,28 +49,28 @@ fun Application.configureConfigManagement(config: SoulLoggerPluginConfiguration,
                 val request = call.receive<MaxFileSizeRequest>()
                 if (request.size > 0) {
                     configManager.updateMaxFileSize(request.size)
-                    call.respond(mapOf("success" to true, "size" to request.size))
+                    call.respond(SizeUpdateResponse(success = true, size = request.size))
                 } else {
-                    call.respond(HttpStatusCode.BadRequest, mapOf("error" to "Invalid size"))
+                    call.respond(HttpStatusCode.BadRequest, ErrorResponse(error = "Invalid size"))
                 }
             }
             
             put("/console") {
                 val request = call.receive<EnableRequest>()
                 configManager.updateEnableConsole(request.enabled)
-                call.respond(mapOf("success" to true, "enabled" to request.enabled))
+                call.respond(EnableUpdateResponse(success = true, enabled = request.enabled))
             }
-            
+
             put("/file") {
                 val request = call.receive<EnableRequest>()
                 configManager.updateEnableFile(request.enabled)
-                call.respond(mapOf("success" to true, "enabled" to request.enabled))
+                call.respond(EnableUpdateResponse(success = true, enabled = request.enabled))
             }
-            
+
             put("/masking") {
                 val request = call.receive<EnableRequest>()
                 configManager.updateEnableMasking(request.enabled)
-                call.respond(mapOf("success" to true, "enabled" to request.enabled))
+                call.respond(EnableUpdateResponse(success = true, enabled = request.enabled))
             }
         }
     }

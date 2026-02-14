@@ -1,0 +1,1575 @@
+[
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:32.706642Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerProvider",
+        "command": "SoulLogger initialized in DEVELOPMENT mode (Level: DEBUG, Logback: true)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:32.721813Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Application launched in 2026.02.14T19:05:32"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:32.722749Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Running in DEVELOPMENT mode with introspection enabled"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:32.723637Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Log reflex route registered at /soul/logger"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:32.726554Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Analysis routes registered"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:32.728522Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Config management route registered at /soul/logger/config"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:32.730275Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Runtime level route registered at /soul/logger/level"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:32.731907Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Health check route registered at /soul/logger/health"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:32.735007Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.config.HotReloader",
+        "command": "HotReloader started with strategy: WATCH"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:32.735047Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Hot reloader started"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:33.678322Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 40,
+            "name": "DefaultDispatcher-worker-12"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "=============================================="
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:33.678750Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 40,
+            "name": "DefaultDispatcher-worker-12"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "SoulLogger Sample Application Started"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:33.678943Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 40,
+            "name": "DefaultDispatcher-worker-12"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "Demo:   http://localhost:8000/demo"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:51.689760Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerProvider",
+        "command": "SoulLogger initialized in DEVELOPMENT mode (Level: DEBUG, Logback: true)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:51.704076Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Application launched in 2026.02.14T19:05:51"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:51.704863Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Running in DEVELOPMENT mode with introspection enabled"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:51.705831Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Log reflex route registered at /soul/logger"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:51.708112Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Analysis routes registered"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:51.709696Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Config management route registered at /soul/logger/config"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:51.711332Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Runtime level route registered at /soul/logger/level"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:51.712753Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Health check route registered at /soul/logger/health"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:51.715146Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.config.HotReloader",
+        "command": "HotReloader started with strategy: WATCH"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:51.715224Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Hot reloader started"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:52.665083Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 29,
+            "name": "DefaultDispatcher-worker-2"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "Demo:   http://localhost:8000/demo"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:52.665186Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 29,
+            "name": "DefaultDispatcher-worker-2"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "=============================================="
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:52.665112Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 29,
+            "name": "DefaultDispatcher-worker-2"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "API:    http://localhost:8000/api/v1"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:52.665140Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 29,
+            "name": "DefaultDispatcher-worker-2"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "Health: http://localhost:8000/health"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:52.664839Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 29,
+            "name": "DefaultDispatcher-worker-2"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "=============================================="
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:52.664987Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 29,
+            "name": "DefaultDispatcher-worker-2"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "SoulLogger Sample Application Started"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:52.665019Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 29,
+            "name": "DefaultDispatcher-worker-2"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "=============================================="
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:52.665048Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 29,
+            "name": "DefaultDispatcher-worker-2"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "Web UI: http://localhost:8000/webui/"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:33.679155Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 40,
+            "name": "DefaultDispatcher-worker-12"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "=============================================="
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:33.679002Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 40,
+            "name": "DefaultDispatcher-worker-12"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "API:    http://localhost:8000/api/v1"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:33.679091Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 40,
+            "name": "DefaultDispatcher-worker-12"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "Health: http://localhost:8000/health"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:33.678820Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 40,
+            "name": "DefaultDispatcher-worker-12"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "=============================================="
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:05:33.678883Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 40,
+            "name": "DefaultDispatcher-worker-12"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "Web UI: http://localhost:8000/webui/"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:06:23.097315Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerProvider",
+        "command": "SoulLogger initialized in DEVELOPMENT mode (Level: DEBUG, Logback: true)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:06:23.110548Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Application launched in 2026.02.14T19:06:23"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:06:23.111285Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Running in DEVELOPMENT mode with introspection enabled"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:06:23.112121Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Log reflex route registered at /soul/logger"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:06:23.114756Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Analysis routes registered"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:06:23.116606Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Config management route registered at /soul/logger/config"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:06:23.118364Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Runtime level route registered at /soul/logger/level"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:06:23.119827Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Health check route registered at /soul/logger/health"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:06:23.122593Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.config.HotReloader",
+        "command": "HotReloader started with strategy: WATCH"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:06:23.122633Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Hot reloader started"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:06:24.075834Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 40,
+            "name": "DefaultDispatcher-worker-12"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "API:    http://localhost:8000/api/v1"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:06:24.075868Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 40,
+            "name": "DefaultDispatcher-worker-12"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "Health: http://localhost:8000/health"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:06:24.075905Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 40,
+            "name": "DefaultDispatcher-worker-12"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "=============================================="
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:06:24.075389Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 40,
+            "name": "DefaultDispatcher-worker-12"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "=============================================="
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:06:24.075671Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 40,
+            "name": "DefaultDispatcher-worker-12"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "SoulLogger Sample Application Started"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:06:24.075712Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 40,
+            "name": "DefaultDispatcher-worker-12"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "=============================================="
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:06:24.075755Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 40,
+            "name": "DefaultDispatcher-worker-12"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "Web UI: http://localhost:8000/webui/"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:06:24.075790Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 40,
+            "name": "DefaultDispatcher-worker-12"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "Demo:   http://localhost:8000/demo"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:06:42.073183Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 52,
+            "name": "eventLoopGroupProxy-4-1"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2",
+        "command": "Call localhost --> /soul/logger/health"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:06:42.124608Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 52,
+            "name": "eventLoopGroupProxy-4-1"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3",
+        "command": "Response localhost --> /soul/logger/health (200 OK && 62 bytes)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:06:42.146977Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 54,
+            "name": "eventLoopGroupProxy-4-2"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2",
+        "command": "Call localhost --> /soul/logger/health/live"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:06:42.150070Z",
+        "logLevel": "WARN",
+        "thread": {
+            "id": 54,
+            "name": "eventLoopGroupProxy-4-2"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3",
+        "command": "Response localhost --> /soul/logger/health/live (Unknown status && 34 bytes)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:06:42.164500Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 56,
+            "name": "eventLoopGroupProxy-4-3"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2",
+        "command": "Call localhost --> /soul/logger/health/ready"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:06:42.167664Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 56,
+            "name": "eventLoopGroupProxy-4-3"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3",
+        "command": "Response localhost --> /soul/logger/health/ready (200 OK && 62 bytes)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:07:11.642929Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 58,
+            "name": "eventLoopGroupProxy-4-4"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2",
+        "command": "Call localhost --> /soul/logger/health/live"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:07:11.651662Z",
+        "logLevel": "WARN",
+        "thread": {
+            "id": 58,
+            "name": "eventLoopGroupProxy-4-4"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3",
+        "command": "Response localhost --> /soul/logger/health/live (Unknown status && 34 bytes)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:07:23.075493Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 45,
+            "name": "DefaultDispatcher-worker-16"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$5",
+        "command": "Heartbeat - application running"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:08:59.176672Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerProvider",
+        "command": "SoulLogger initialized in DEVELOPMENT mode (Level: DEBUG, Logback: true)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:08:59.190134Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Application launched in 2026.02.14T19:08:59"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:08:59.190947Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Running in DEVELOPMENT mode with introspection enabled"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:08:59.192030Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Log reflex route registered at /soul/logger"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:08:59.195145Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Analysis routes registered"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:08:59.196787Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Config management route registered at /soul/logger/config"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:08:59.198428Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Runtime level route registered at /soul/logger/level"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:08:59.199966Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Health check route registered at /soul/logger/health"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:08:59.202264Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.config.HotReloader",
+        "command": "HotReloader started with strategy: WATCH"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:08:59.202304Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Hot reloader started"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:00.152856Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 42,
+            "name": "DefaultDispatcher-worker-14"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "=============================================="
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:00.152901Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 42,
+            "name": "DefaultDispatcher-worker-14"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "Web UI: http://localhost:8000/webui/"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:00.152964Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 42,
+            "name": "DefaultDispatcher-worker-14"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "Demo:   http://localhost:8000/demo"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:00.153010Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 42,
+            "name": "DefaultDispatcher-worker-14"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "API:    http://localhost:8000/api/v1"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:00.153162Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 42,
+            "name": "DefaultDispatcher-worker-14"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "=============================================="
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:00.153055Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 42,
+            "name": "DefaultDispatcher-worker-14"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "Health: http://localhost:8000/health"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:00.152466Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 42,
+            "name": "DefaultDispatcher-worker-14"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "=============================================="
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:00.152803Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 42,
+            "name": "DefaultDispatcher-worker-14"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "SoulLogger Sample Application Started"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:16.628167Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 51,
+            "name": "eventLoopGroupProxy-4-1"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2",
+        "command": "Call localhost --> /soul/logger/health/live"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:16.654988Z",
+        "logLevel": "WARN",
+        "thread": {
+            "id": 51,
+            "name": "eventLoopGroupProxy-4-1"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3",
+        "command": "Response localhost --> /soul/logger/health/live (Unknown status && 34 bytes)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:16.674477Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 53,
+            "name": "eventLoopGroupProxy-4-2"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2",
+        "command": "Call localhost --> /soul/logger/health/ready"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:16.685172Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 53,
+            "name": "eventLoopGroupProxy-4-2"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3",
+        "command": "Response localhost --> /soul/logger/health/ready (200 OK && 62 bytes)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:16.696197Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 55,
+            "name": "eventLoopGroupProxy-4-3"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2",
+        "command": "Call localhost --> /soul/logger/health/buffer"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:16.704701Z",
+        "logLevel": "WARN",
+        "thread": {
+            "id": 55,
+            "name": "eventLoopGroupProxy-4-3"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3",
+        "command": "Response localhost --> /soul/logger/health/buffer (Unknown status && 62 bytes)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:16.720803Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 57,
+            "name": "eventLoopGroupProxy-4-4"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2",
+        "command": "Call localhost --> /soul/logger/health/disk"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:16.723374Z",
+        "logLevel": "WARN",
+        "thread": {
+            "id": 57,
+            "name": "eventLoopGroupProxy-4-4"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3",
+        "command": "Response localhost --> /soul/logger/health/disk (Unknown status && 62 bytes)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:16.736571Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 59,
+            "name": "eventLoopGroupProxy-4-5"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2",
+        "command": "Call localhost --> /soul/logger/health/queue"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:16.738097Z",
+        "logLevel": "WARN",
+        "thread": {
+            "id": 59,
+            "name": "eventLoopGroupProxy-4-5"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3",
+        "command": "Response localhost --> /soul/logger/health/queue (Unknown status && 62 bytes)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:56.046459Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerProvider",
+        "command": "SoulLogger initialized in DEVELOPMENT mode (Level: DEBUG, Logback: true)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:56.059598Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Application launched in 2026.02.14T19:09:56"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:56.060462Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Running in DEVELOPMENT mode with introspection enabled"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:56.061312Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Log reflex route registered at /soul/logger"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:56.063933Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Analysis routes registered"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:56.065781Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Config management route registered at /soul/logger/config"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:56.067327Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Runtime level route registered at /soul/logger/level"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:56.068675Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Health check route registered at /soul/logger/health"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:56.071122Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.config.HotReloader",
+        "command": "HotReloader started with strategy: WATCH"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:56.071175Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 1,
+            "name": "main"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt",
+        "command": "Hot reloader started"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:57.024007Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 42,
+            "name": "DefaultDispatcher-worker-14"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "=============================================="
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:57.024623Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 42,
+            "name": "DefaultDispatcher-worker-14"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "Demo:   http://localhost:8000/demo"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:57.024681Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 42,
+            "name": "DefaultDispatcher-worker-14"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "API:    http://localhost:8000/api/v1"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:57.024738Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 42,
+            "name": "DefaultDispatcher-worker-14"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "Health: http://localhost:8000/health"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:57.024797Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 42,
+            "name": "DefaultDispatcher-worker-14"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "=============================================="
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:57.024419Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 42,
+            "name": "DefaultDispatcher-worker-14"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "SoulLogger Sample Application Started"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:57.024490Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 42,
+            "name": "DefaultDispatcher-worker-14"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "=============================================="
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:09:57.024552Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 42,
+            "name": "DefaultDispatcher-worker-14"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.ApplicationKt$main$server$1$4",
+        "command": "Web UI: http://localhost:8000/webui/"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:09.376541Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 52,
+            "name": "eventLoopGroupProxy-4-1"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2",
+        "command": "Call localhost --> /soul/logger/health/live"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:09.398706Z",
+        "logLevel": "WARN",
+        "thread": {
+            "id": 52,
+            "name": "eventLoopGroupProxy-4-1"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3",
+        "command": "Response localhost --> /soul/logger/health/live (Unknown status && 62 bytes)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:13.712489Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 54,
+            "name": "eventLoopGroupProxy-4-2"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2",
+        "command": "Call localhost --> /soul/logger/config"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:13.715428Z",
+        "logLevel": "WARN",
+        "thread": {
+            "id": 54,
+            "name": "eventLoopGroupProxy-4-2"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3",
+        "command": "Response localhost --> /soul/logger/config (Unknown status && 62 bytes)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:33.163343Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 56,
+            "name": "eventLoopGroupProxy-4-3"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2",
+        "command": "Call localhost --> /soul/logger/level/global"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:33.180197Z",
+        "logLevel": "WARN",
+        "thread": {
+            "id": 56,
+            "name": "eventLoopGroupProxy-4-3"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3",
+        "command": "Response localhost --> /soul/logger/level/global (Unknown status && 55 bytes)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:33.196434Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 58,
+            "name": "eventLoopGroupProxy-4-4"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2",
+        "command": "Call localhost --> /soul/logger/level/global"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:33.233667Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 58,
+            "name": "eventLoopGroupProxy-4-4"
+        },
+        "entry": "com.lestere.opensource.config.RuntimeLevelManager",
+        "command": "Global log level set to: WARN"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:33.236881Z",
+        "logLevel": "WARN",
+        "thread": {
+            "id": 58,
+            "name": "eventLoopGroupProxy-4-4"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3",
+        "command": "Response localhost --> /soul/logger/level/global (Unknown status && 62 bytes)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:33.251445Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 64,
+            "name": "eventLoopGroupProxy-4-5"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2",
+        "command": "Call localhost --> /soul/logger/level/global"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:33.252011Z",
+        "logLevel": "WARN",
+        "thread": {
+            "id": 64,
+            "name": "eventLoopGroupProxy-4-5"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3",
+        "command": "Response localhost --> /soul/logger/level/global (Unknown status && 55 bytes)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:37.971521Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 66,
+            "name": "eventLoopGroupProxy-4-6"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2",
+        "command": "Call localhost --> /health"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:38.011905Z",
+        "logLevel": "WARN",
+        "thread": {
+            "id": 66,
+            "name": "eventLoopGroupProxy-4-6"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3",
+        "command": "Response localhost --> /health (Unknown status && 62 bytes)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:38.025289Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 67,
+            "name": "eventLoopGroupProxy-4-7"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2",
+        "command": "Call localhost --> /demo"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:38.029239Z",
+        "logLevel": "WARN",
+        "thread": {
+            "id": 67,
+            "name": "eventLoopGroupProxy-4-7"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3",
+        "command": "Response localhost --> /demo (Unknown status && 62 bytes)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:38.042877Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 68,
+            "name": "eventLoopGroupProxy-4-8"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2",
+        "command": "Call localhost --> /demo/metrics"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:38.046875Z",
+        "logLevel": "WARN",
+        "thread": {
+            "id": 68,
+            "name": "eventLoopGroupProxy-4-8"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3",
+        "command": "Response localhost --> /demo/metrics (Unknown status && 62 bytes)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:38.057408Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 69,
+            "name": "eventLoopGroupProxy-4-9"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2",
+        "command": "Call localhost --> /demo/health"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:38.059977Z",
+        "logLevel": "WARN",
+        "thread": {
+            "id": 69,
+            "name": "eventLoopGroupProxy-4-9"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3",
+        "command": "Response localhost --> /demo/health (Unknown status && 62 bytes)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:43.427656Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 70,
+            "name": "eventLoopGroupProxy-4-10"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.WebUIKt$configureWebUI$2$3$1",
+        "command": "API: /api/v1/health called"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:43.421678Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 70,
+            "name": "eventLoopGroupProxy-4-10"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2",
+        "command": "Call localhost --> /api/v1/health"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:43.440337Z",
+        "logLevel": "WARN",
+        "thread": {
+            "id": 70,
+            "name": "eventLoopGroupProxy-4-10"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3",
+        "command": "Response localhost --> /api/v1/health (Unknown status && 62 bytes)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:43.456887Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 52,
+            "name": "eventLoopGroupProxy-4-1"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2",
+        "command": "Call localhost --> /api/v1/stats"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:43.457229Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 52,
+            "name": "eventLoopGroupProxy-4-1"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.WebUIKt$configureWebUI$2$3$2",
+        "command": "API: /api/v1/stats called"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:43.463233Z",
+        "logLevel": "WARN",
+        "thread": {
+            "id": 52,
+            "name": "eventLoopGroupProxy-4-1"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3",
+        "command": "Response localhost --> /api/v1/stats (Unknown status && 62 bytes)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:43.474974Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 54,
+            "name": "eventLoopGroupProxy-4-2"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2",
+        "command": "Call localhost --> /api/v1/config"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:43.475295Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 54,
+            "name": "eventLoopGroupProxy-4-2"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.WebUIKt$configureWebUI$2$3$6",
+        "command": "API: /api/v1/config called"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:43.478081Z",
+        "logLevel": "WARN",
+        "thread": {
+            "id": 54,
+            "name": "eventLoopGroupProxy-4-2"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3",
+        "command": "Response localhost --> /api/v1/config (Unknown status && 62 bytes)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:43.488635Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 56,
+            "name": "eventLoopGroupProxy-4-3"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2",
+        "command": "Call localhost --> /api/v1/stats/level-distribution"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:43.488932Z",
+        "logLevel": "DEBUG",
+        "thread": {
+            "id": 56,
+            "name": "eventLoopGroupProxy-4-3"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.WebUIKt$configureWebUI$2$3$3",
+        "command": "API: /api/v1/stats/level-distribution called"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:43.490969Z",
+        "logLevel": "WARN",
+        "thread": {
+            "id": 56,
+            "name": "eventLoopGroupProxy-4-3"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$3",
+        "command": "Response localhost --> /api/v1/stats/level-distribution (Unknown status && 62 bytes)"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:10:48.613326Z",
+        "logLevel": "INFO",
+        "thread": {
+            "id": 58,
+            "name": "eventLoopGroupProxy-4-4"
+        },
+        "entry": "com.lestere.opensource.logger.SoulLoggerPluginKt$SoulLoggerPlugin$2$2",
+        "command": "Call localhost --> /soul/logger/config/level"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:11:07.958363Z",
+        "logLevel": "ERROR",
+        "thread": {
+            "id": 67,
+            "name": "eventLoopGroupProxy-4-7"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.DemoRoutesKt$configureDemoRoutes$1$1$15",
+        "command": "java.lang.IllegalStateException: Load test error 3"
+    },
+    {
+        "version": "0.0.1-dev",
+        "timestamp": "2026-02-14T19:11:08.003133Z",
+        "logLevel": "ERROR",
+        "thread": {
+            "id": 70,
+            "name": "eventLoopGroupProxy-4-10"
+        },
+        "entry": "com.lestere.opensource.soullogger.sample.DemoRoutesKt$configureDemoRoutes$1$1$11",
+        "command": "java.lang.IllegalStateException: Demo error for testing"
+    }
+]

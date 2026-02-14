@@ -1,6 +1,5 @@
 package com.lestere.opensource.logger
 
-import com.lestere.opensource.arc.AutoReleaseCyberPlugin
 import com.lestere.opensource.config.DynamicConfigManager
 import com.lestere.opensource.config.HotReloader
 import com.lestere.opensource.config.RuntimeLevelManager
@@ -90,7 +89,7 @@ val SoulLoggerPlugin = createApplicationPlugin("SoulLoggerPlugin", ::SoulLoggerP
 
         // Register health check routes (if enabled)
         if (pluginConfig.healthCheck.enabled) {
-            app.configureHealthCheck(pluginConfig, healthCheckManager)
+            app.configureHealthCheck(healthCheckManager)
             SoulLogger.debug("Health check route registered at /soul/logger/health")
         }
 

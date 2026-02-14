@@ -2,13 +2,18 @@ package com.lestere.opensource.logger.routes
 
 import com.lestere.opensource.health.HealthCheckManager
 import com.lestere.opensource.health.HealthStatus
-import com.lestere.opensource.logger.SoulLoggerPluginConfiguration
+import com.lestere.opensource.models.HealthCheckItemResponse
+import com.lestere.opensource.models.HealthCheckResponse
+import com.lestere.opensource.models.HealthDetailResponse
+import com.lestere.opensource.models.HealthDetailValue
+import com.lestere.opensource.models.HealthLiveResponse
+import com.lestere.opensource.models.HealthReadyResponse
 import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 
-fun Application.configureHealthCheck(config: SoulLoggerPluginConfiguration, healthManager: HealthCheckManager) {
+fun Application.configureHealthCheck(healthManager: HealthCheckManager) {
     routing {
         route("/soul/logger/health") {
             get {
@@ -17,22 +22,22 @@ fun Application.configureHealthCheck(config: SoulLoggerPluginConfiguration, heal
                     if (status.status == HealthStatus.Status.HEALTHY) HttpStatusCode.OK
                     else if (status.status == HealthStatus.Status.DEGRADED) HttpStatusCode.ServiceUnavailable
                     else HttpStatusCode.InternalServerError,
-                    mapOf(
-                        "status" to status.status.toSimpleString(),
-                        "checks" to status.checks.mapValues {
-                            mapOf(
-                                "status" to it.value.status.toSimpleString(),
-                                "message" to (it.value.message ?: ""),
-                                "details" to (it.value.details ?: emptyMap<String, Any>())
+                    HealthCheckResponse(
+                        status = status.status.toSimpleString(),
+                        checks = status.checks.mapValues { (_, v) ->
+                            HealthCheckItemResponse(
+                                status = v.status.toSimpleString(),
+                                message = v.message ?: "",
+                                details = v.details?.mapValues { convertToHealthDetailValue(it.value) } ?: emptyMap()
                             )
                         },
-                        "timestamp" to status.timestamp
+                        timestamp = status.timestamp
                     )
                 )
             }
             
             get("/live") {
-                call.respond(mapOf("status" to "UP", "service" to "SoulLogger"))
+                call.respond(HealthLiveResponse(status = "UP", service = "SoulLogger"))
             }
             
             get("/ready") {
@@ -44,12 +49,12 @@ fun Application.configureHealthCheck(config: SoulLoggerPluginConfiguration, heal
                 }
                 call.respond(
                     httpStatus,
-                    mapOf(
-                        "status" to when (status.status) {
+                    HealthReadyResponse(
+                        status = when (status.status) {
                             HealthStatus.Status.HEALTHY -> "UP"
                             else -> "DOWN"
                         },
-                        "checks" to status.checks.mapValues { it.value.status.toSimpleString() }
+                        checks = status.checks.mapValues { it.value.status.toSimpleString() }
                     )
                 )
             }
@@ -58,10 +63,10 @@ fun Application.configureHealthCheck(config: SoulLoggerPluginConfiguration, heal
                 val status = healthManager.check()
                 val bufferCheck = status.checks["buffer"]
                 call.respond(
-                    mapOf(
-                        "status" to (bufferCheck?.status?.toSimpleString() ?: "UNKNOWN"),
-                        "message" to (bufferCheck?.message ?: ""),
-                        "details" to (bufferCheck?.details ?: emptyMap())
+                    HealthDetailResponse(
+                        status = bufferCheck?.status?.toSimpleString() ?: "UNKNOWN",
+                        message = bufferCheck?.message ?: "",
+                        details = bufferCheck?.details?.mapValues { convertToHealthDetailValue(it.value) } ?: emptyMap()
                     )
                 )
             }
@@ -70,10 +75,10 @@ fun Application.configureHealthCheck(config: SoulLoggerPluginConfiguration, heal
                 val status = healthManager.check()
                 val diskCheck = status.checks["disk"]
                 call.respond(
-                    mapOf(
-                        "status" to (diskCheck?.status?.toSimpleString() ?: "UNKNOWN"),
-                        "message" to (diskCheck?.message ?: ""),
-                        "details" to (diskCheck?.details ?: emptyMap())
+                    HealthDetailResponse(
+                        status = diskCheck?.status?.toSimpleString() ?: "UNKNOWN",
+                        message = diskCheck?.message ?: "",
+                        details = diskCheck?.details?.mapValues { convertToHealthDetailValue(it.value) } ?: emptyMap()
                     )
                 )
             }
@@ -82,13 +87,25 @@ fun Application.configureHealthCheck(config: SoulLoggerPluginConfiguration, heal
                 val status = healthManager.check()
                 val queueCheck = status.checks["queue"]
                 call.respond(
-                    mapOf(
-                        "status" to (queueCheck?.status?.toSimpleString() ?: "UNKNOWN"),
-                        "message" to (queueCheck?.message ?: ""),
-                        "details" to (queueCheck?.details ?: emptyMap())
+                    HealthDetailResponse(
+                        status = queueCheck?.status?.toSimpleString() ?: "UNKNOWN",
+                        message = queueCheck?.message ?: "",
+                        details = queueCheck?.details?.mapValues { convertToHealthDetailValue(it.value) } ?: emptyMap()
                     )
                 )
             }
         }
+    }
+}
+
+private fun convertToHealthDetailValue(value: Any?): HealthDetailValue {
+    return when (value) {
+        is String -> HealthDetailValue.StringValue(value)
+        is Int -> HealthDetailValue.IntValue(value)
+        is Long -> HealthDetailValue.LongValue(value)
+        is Double -> HealthDetailValue.DoubleValue(value)
+        is Boolean -> HealthDetailValue.BooleanValue(value)
+        null -> HealthDetailValue.Empty()
+        else -> HealthDetailValue.StringValue(value.toString())
     }
 }

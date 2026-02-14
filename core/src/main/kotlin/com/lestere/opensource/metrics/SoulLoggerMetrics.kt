@@ -2,6 +2,7 @@ package com.lestere.opensource.metrics
 
 import com.lestere.opensource.logger.Logger
 import com.lestere.opensource.logger.SoulLogger
+import com.lestere.opensource.models.MetricsSummaryResponse
 import io.micrometer.core.instrument.Counter
 import io.micrometer.core.instrument.DistributionSummary
 import io.micrometer.core.instrument.Gauge
@@ -123,19 +124,19 @@ class SoulLoggerMetrics(
         )
     }
     
-    fun getSummary(): Map<String, Any> {
-        return mapOf(
-            "logs.written" to _logsWritten.get(),
-            "logs.dropped" to _logsDropped.get(),
-            "logs.errors" to _logsErrors.get(),
-            "queue.size" to _queueSize.get(),
-            "rotation.count" to _rotationCount.get(),
-            "write.latency.p50" to writeTimer.percentile(0.5, TimeUnit.MILLISECONDS),
-            "write.latency.p95" to writeTimer.percentile(0.95, TimeUnit.MILLISECONDS),
-            "write.latency.p99" to writeTimer.percentile(0.99, TimeUnit.MILLISECONDS),
-            "flush.latency.p50" to flushTimer.percentile(0.5, TimeUnit.MILLISECONDS),
-            "flush.latency.p95" to flushTimer.percentile(0.95, TimeUnit.MILLISECONDS),
-            "flush.latency.p99" to flushTimer.percentile(0.99, TimeUnit.MILLISECONDS)
+    fun getSummary(): MetricsSummaryResponse {
+        return MetricsSummaryResponse(
+            logsWritten = _logsWritten.get(),
+            logsDropped = _logsDropped.get(),
+            logsErrors = _logsErrors.get(),
+            queueSize = _queueSize.get(),
+            rotationCount = _rotationCount.get(),
+            writeLatencyP50 = writeTimer.percentile(0.5, TimeUnit.MILLISECONDS),
+            writeLatencyP95 = writeTimer.percentile(0.95, TimeUnit.MILLISECONDS),
+            writeLatencyP99 = writeTimer.percentile(0.99, TimeUnit.MILLISECONDS),
+            flushLatencyP50 = flushTimer.percentile(0.5, TimeUnit.MILLISECONDS),
+            flushLatencyP95 = flushTimer.percentile(0.95, TimeUnit.MILLISECONDS),
+            flushLatencyP99 = flushTimer.percentile(0.99, TimeUnit.MILLISECONDS)
         )
     }
     

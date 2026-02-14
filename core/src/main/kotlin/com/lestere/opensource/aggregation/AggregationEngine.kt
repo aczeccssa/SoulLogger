@@ -2,6 +2,8 @@ package com.lestere.opensource.aggregation
 
 import com.lestere.opensource.logger.Logger
 import com.lestere.opensource.logger.SoulLogger
+import com.lestere.opensource.models.StatisticsResponse
+import com.lestere.opensource.models.TimeRangeResponse
 
 data class AggregationRequest(
     val groupBy: List<String> = listOf("level"),
@@ -167,22 +169,25 @@ class AggregationEngine {
         return logs.size / durationSeconds
     }
 
-    fun getStatistics(logs: List<Logger>): Map<String, Any?> {
-        return mapOf(
-            "total" to logs.size,
-            "byLevel" to SoulLogger.Level.entries.associate { level ->
-                level.name to logs.count { it.logLevel == level }
-            },
-            "errorCount" to logs.count { it.logLevel >= SoulLogger.Level.ERROR },
-            "errorRate" to calculateErrorRate(logs),
-            "uniqueEntries" to logs.map { it.entry }.distinct().size,
-            "timeRange" to if (logs.isNotEmpty()) {
-                val sorted = logs.sortedBy { it.timestamp }
-                mapOf(
-                    "start" to sorted.first().timestamp.toString(),
-                    "end" to sorted.last().timestamp.toString()
-                )
-            } else null
+    fun getStatistics(logs: List<Logger>): StatisticsResponse {
+        val byLevel = SoulLogger.Level.entries.associate { level ->
+            level.name to logs.count { it.logLevel == level }
+        }
+        val timeRange = if (logs.isNotEmpty()) {
+            val sorted = logs.sortedBy { it.timestamp }
+            TimeRangeResponse(
+                start = sorted.first().timestamp.toString(),
+                end = sorted.last().timestamp.toString()
+            )
+        } else null
+        
+        return StatisticsResponse(
+            total = logs.size,
+            byLevel = byLevel,
+            errorCount = logs.count { it.logLevel >= SoulLogger.Level.ERROR },
+            errorRate = calculateErrorRate(logs),
+            uniqueEntries = logs.map { it.entry }.distinct().size,
+            timeRange = timeRange
         )
     }
 }

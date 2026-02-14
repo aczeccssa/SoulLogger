@@ -206,6 +206,6 @@ class AggregationEngineTest {
         val stats = engine.getStatistics(logs)
         
         // Just verify we get some stats back
-        assertTrue(stats.isNotEmpty())
+        assertTrue(stats.total > 0)
     }
 }
