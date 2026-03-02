@@ -1,5 +1,37 @@
 import java.net.URI
 
+val gitRemoteUrl: String = try {
+    val process = ProcessBuilder("git", "config", "--get", "remote.origin.url").start()
+    var url = process.inputStream.bufferedReader().readText().trim()
+    if (url.startsWith("git@")) {
+        url = url.replace(":", "/").replace("git@", "https://")
+    }
+    if (url.endsWith(".git")) {
+        url = url.removeSuffix(".git")
+    }
+    if (url.isEmpty()) "https://github.com/aczeccssa/SoulLogger" else url
+} catch (e: Exception) {
+    "https://github.com/aczeccssa/SoulLogger"
+}
+
+val gitBranch: String = try {
+    val process = ProcessBuilder("git", "rev-parse", "--abbrev-ref", "HEAD").start()
+    val branch = process.inputStream.bufferedReader().readText().trim()
+    if (branch.isEmpty() || branch == "HEAD") {
+        val commitProcess = ProcessBuilder("git", "rev-parse", "HEAD").start()
+        val commit = commitProcess.inputStream.bufferedReader().readText().trim()
+        if (commit.isEmpty()) {
+            System.getenv("GITHUB_REF_NAME") ?: System.getenv("GITHUB_SHA") ?: "main"
+        } else {
+            commit
+        }
+    } else {
+        branch
+    }
+} catch (e: Exception) {
+    System.getenv("GITHUB_REF_NAME") ?: System.getenv("GITHUB_SHA") ?: "main"
+}
+
 plugins {
     kotlin("jvm")
     kotlin("plugin.serialization") version "2.2.21"
@@ -68,7 +100,7 @@ dokka {
         skipEmptyPackages.set(true)
         sourceLink {
             localDirectory.set(file("src/main/kotlin"))
-            remoteUrl.set(URI("https://github.com/aczeccssa/SoulLogger/blob/main/core/src/main/kotlin"))
+            remoteUrl.set(URI("$gitRemoteUrl/blob/$gitBranch/core/src/main/kotlin"))
             remoteLineSuffix.set("#L")
         }
     }
