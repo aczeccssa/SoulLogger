@@ -69,6 +69,7 @@ dokka {
         sourceLink {
             localDirectory.set(file("src/main/kotlin"))
             remoteUrl.set(URI("https://github.com/aczeccssa/SoulLogger"))
+            remotePath.set("core/src/main/kotlin")
             remoteLineSuffix.set("#L")
         }
     }
