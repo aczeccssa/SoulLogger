@@ -88,15 +88,20 @@ private fun Route.handleRequestGenerateLogFileAnalysisHtmlResult(
                 pathParametersNotFound("timestamp"),
                 Unit
             )
+            if (!isValidPathParameter(ts)) return@get call.respondRefiled(
+                HttpStatusCode.BadRequest,
+                invalidPathParameterException,
+                Unit
+            )
             var path = Paths.get("${reportDict}/${ts}")
             if (!Files.exists(path)) {
-                val logPath = Paths.get("${logDict}/${call.parameters["timestamp"]}.log")
+                val logPath = Paths.get("${logDict}/${ts}.log")
                 if (!Files.exists(logPath)) return@get call.respondRefiled(
                     HttpStatusCode.BadRequest,
                     fileNotFoundException,
                     Unit
                 )
-                path = Paths.get("${tempDict}/${call.parameters["timestamp"]}")
+                path = Paths.get("${tempDict}/${ts}")
                 if (!Files.exists(path)) generateNotExistsLogReport(logPath, tempDict, aliveDurationMs)
             }
             // Using csv report to generate
@@ -119,6 +124,11 @@ private fun Route.handleRequestGetGeneratedLogFileAnalysisHtmlResult(tempDict: S
         val id = call.parameters["id"] ?: return@get call.respondRefiled(
             HttpStatusCode.BadRequest,
             pathParametersNotFound("id"),
+            Unit
+        )
+        if (!isValidPathParameter(id)) return@get call.respondRefiled(
+            HttpStatusCode.BadRequest,
+            invalidPathParameterException,
             Unit
         )
         val path = Paths.get("${tempDict}/${id}/${CSVAnalyser.FULLY_RESULT_HTML_NAME}")
