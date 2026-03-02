@@ -115,8 +115,7 @@ internal object CSVAnalyser {
     fun analysisCSVToHtmlWithAnalyzedFooter(df: DataFrame<*>, path: Path): Path {
         val output = path.resolve(FULLY_RESULT_HTML_NAME)
         // Write dataframe to html
-        Files.createDirectories(output.parent) // @FIXME: Parent folder complete.
-        Files.createFile(output)
+        output.parent?.let { Files.createDirectories(it) }
         val file = output.toFile()
         val html = df.toStandaloneHTML(htmlConfig) {
             // c6 column
