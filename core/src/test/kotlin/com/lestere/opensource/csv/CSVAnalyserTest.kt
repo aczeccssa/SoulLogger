@@ -58,7 +58,7 @@ class CSVAnalyserTest {
         try {
             CSVAnalyser.analysisCSVToHtmlWithAnalyzedFooter(df, emptyPath)
         } catch (e: Exception) {
-            assertTrue(false, "Should not throw an exception for empty path: ${e.message}")
+            fail("Should not throw an exception for empty path: ${e.message}")
         } finally {
             Files.deleteIfExists(Paths.get(CSVAnalyser.FULLY_RESULT_HTML_NAME))
         }
