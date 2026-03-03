@@ -90,12 +90,12 @@ class DynamicConfigManager(
     
     private fun notifyObservers(change: ConfigChange) {
         for (observer in observers) {
-            try {
-                scope.launch {
+            scope.launch {
+                try {
                     observer.onConfigChanged(change)
+                } catch (_: Exception) {
+                    // ignore
                 }
-            } catch (_: Exception) {
-                // ignore
             }
         }
     }

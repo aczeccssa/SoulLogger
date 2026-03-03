@@ -2,6 +2,7 @@ package com.lestere.opensource.config
 
 import com.lestere.opensource.logger.SoulLogger
 import com.lestere.opensource.logger.SoulLoggerPluginConfiguration
+import io.mockk.every
 import io.mockk.mockk
 import io.mockk.verify
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -263,5 +264,22 @@ class DynamicConfigManagerTest {
 
         advanceUntilIdle()
         verify(exactly = 0) { observer.onConfigChanged(any()) }
+    }
+
+    @Test
+    fun `failing observer does not prevent other observers from being notified`() = runTest {
+        val failingObserver = mockk<ConfigObserver>()
+        val workingObserver = mockk<ConfigObserver>(relaxed = true)
+        every { failingObserver.onConfigChanged(any()) } throws RuntimeException("Observer failed!")
+
+        manager.addObserver(failingObserver)
+        manager.addObserver(workingObserver)
+
+        manager.updateLevel(SoulLogger.Level.DEBUG)
+
+        advanceUntilIdle()
+
+        verify { failingObserver.onConfigChanged(any()) }
+        verify { workingObserver.onConfigChanged(any()) }
     }
 }
