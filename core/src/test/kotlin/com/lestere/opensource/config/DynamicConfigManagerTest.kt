@@ -58,7 +58,6 @@ class DynamicConfigManagerTest {
     fun `updateLevel with same value returns false and does not notify`() = runTest {
         val observer = mockk<ConfigObserver>(relaxed = true)
         manager.addObserver(observer)
-        config.level = SoulLogger.Level.INFO
 
         val result = manager.updateLevel(SoulLogger.Level.INFO)
 
@@ -169,6 +168,76 @@ class DynamicConfigManagerTest {
     }
 
     @Test
+    fun `updateQueueCapacity with same value returns false and does not notify`() = runTest {
+        val observer = mockk<ConfigObserver>(relaxed = true)
+        manager.addObserver(observer)
+        val currentCapacity = config.queueCapacity
+
+        val result = manager.updateQueueCapacity(currentCapacity)
+
+        assertFalse(result)
+
+        advanceUntilIdle()
+        verify(exactly = 0) { observer.onConfigChanged(any()) }
+    }
+
+    @Test
+    fun `updateMaxFileSize with same value returns false and does not notify`() = runTest {
+        val observer = mockk<ConfigObserver>(relaxed = true)
+        manager.addObserver(observer)
+        val currentSize = config.maxFileSize
+
+        val result = manager.updateMaxFileSize(currentSize)
+
+        assertFalse(result)
+
+        advanceUntilIdle()
+        verify(exactly = 0) { observer.onConfigChanged(any()) }
+    }
+
+    @Test
+    fun `updateEnableConsole with same value returns false and does not notify`() = runTest {
+        val observer = mockk<ConfigObserver>(relaxed = true)
+        manager.addObserver(observer)
+        val currentVal = config.enableConsole
+
+        val result = manager.updateEnableConsole(currentVal)
+
+        assertFalse(result)
+
+        advanceUntilIdle()
+        verify(exactly = 0) { observer.onConfigChanged(any()) }
+    }
+
+    @Test
+    fun `updateEnableFile with same value returns false and does not notify`() = runTest {
+        val observer = mockk<ConfigObserver>(relaxed = true)
+        manager.addObserver(observer)
+        val currentVal = config.enableFile
+
+        val result = manager.updateEnableFile(currentVal)
+
+        assertFalse(result)
+
+        advanceUntilIdle()
+        verify(exactly = 0) { observer.onConfigChanged(any()) }
+    }
+
+    @Test
+    fun `updateEnableMasking with same value returns false and does not notify`() = runTest {
+        val observer = mockk<ConfigObserver>(relaxed = true)
+        manager.addObserver(observer)
+        val currentVal = config.enableMasking
+
+        val result = manager.updateEnableMasking(currentVal)
+
+        assertFalse(result)
+
+        advanceUntilIdle()
+        verify(exactly = 0) { observer.onConfigChanged(any()) }
+    }
+
+    @Test
     fun `removeObserver stops notifications`() = runTest {
         val observer = mockk<ConfigObserver>(relaxed = true)
         manager.addObserver(observer)
@@ -187,8 +256,10 @@ class DynamicConfigManagerTest {
 
         manager.shutdown()
 
-        // This should not notify because the scope is cancelled
-        manager.updateLevel(SoulLogger.Level.DEBUG)
+        val result = manager.updateLevel(SoulLogger.Level.DEBUG)
+
+        assertTrue(result)
+        assertEquals(SoulLogger.Level.DEBUG, config.level)
 
         advanceUntilIdle()
         verify(exactly = 0) { observer.onConfigChanged(any()) }
