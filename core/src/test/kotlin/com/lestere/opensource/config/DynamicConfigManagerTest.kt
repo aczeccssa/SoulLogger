@@ -89,6 +89,20 @@ class DynamicConfigManagerTest {
     }
 
     @Test
+    fun `updateQueueCapacity with same value returns false and does not notify`() = runTest {
+        val observer = mockk<ConfigObserver>(relaxed = true)
+        manager.addObserver(observer)
+        val currentCapacity = config.queueCapacity
+
+        val result = manager.updateQueueCapacity(currentCapacity)
+
+        assertFalse(result)
+
+        advanceUntilIdle()
+        verify(exactly = 0) { observer.onConfigChanged(any()) }
+    }
+
+    @Test
     fun `updateMaxFileSize changes size and notifies observer`() = runTest {
         val observer = mockk<ConfigObserver>(relaxed = true)
         manager.addObserver(observer)
@@ -106,6 +120,20 @@ class DynamicConfigManagerTest {
                 it.key == "maxFileSize" && it.oldValue == oldSize && it.newValue == newSize
             })
         }
+    }
+
+    @Test
+    fun `updateMaxFileSize with same value returns false and does not notify`() = runTest {
+        val observer = mockk<ConfigObserver>(relaxed = true)
+        manager.addObserver(observer)
+        val currentSize = config.maxFileSize
+
+        val result = manager.updateMaxFileSize(currentSize)
+
+        assertFalse(result)
+
+        advanceUntilIdle()
+        verify(exactly = 0) { observer.onConfigChanged(any()) }
     }
 
     @Test
@@ -129,6 +157,20 @@ class DynamicConfigManagerTest {
     }
 
     @Test
+    fun `updateEnableConsole with same value returns false and does not notify`() = runTest {
+        val observer = mockk<ConfigObserver>(relaxed = true)
+        manager.addObserver(observer)
+        val currentVal = config.enableConsole
+
+        val result = manager.updateEnableConsole(currentVal)
+
+        assertFalse(result)
+
+        advanceUntilIdle()
+        verify(exactly = 0) { observer.onConfigChanged(any()) }
+    }
+
+    @Test
     fun `updateEnableFile changes value and notifies observer`() = runTest {
         val observer = mockk<ConfigObserver>(relaxed = true)
         manager.addObserver(observer)
@@ -149,6 +191,20 @@ class DynamicConfigManagerTest {
     }
 
     @Test
+    fun `updateEnableFile with same value returns false and does not notify`() = runTest {
+        val observer = mockk<ConfigObserver>(relaxed = true)
+        manager.addObserver(observer)
+        val currentVal = config.enableFile
+
+        val result = manager.updateEnableFile(currentVal)
+
+        assertFalse(result)
+
+        advanceUntilIdle()
+        verify(exactly = 0) { observer.onConfigChanged(any()) }
+    }
+
+    @Test
     fun `updateEnableMasking changes value and notifies observer`() = runTest {
         val observer = mockk<ConfigObserver>(relaxed = true)
         manager.addObserver(observer)
@@ -166,62 +222,6 @@ class DynamicConfigManagerTest {
                 it.key == "enableMasking" && it.oldValue == oldVal && it.newValue == newVal
             })
         }
-    }
-
-    @Test
-    fun `updateQueueCapacity with same value returns false and does not notify`() = runTest {
-        val observer = mockk<ConfigObserver>(relaxed = true)
-        manager.addObserver(observer)
-        val currentCapacity = config.queueCapacity
-
-        val result = manager.updateQueueCapacity(currentCapacity)
-
-        assertFalse(result)
-
-        advanceUntilIdle()
-        verify(exactly = 0) { observer.onConfigChanged(any()) }
-    }
-
-    @Test
-    fun `updateMaxFileSize with same value returns false and does not notify`() = runTest {
-        val observer = mockk<ConfigObserver>(relaxed = true)
-        manager.addObserver(observer)
-        val currentSize = config.maxFileSize
-
-        val result = manager.updateMaxFileSize(currentSize)
-
-        assertFalse(result)
-
-        advanceUntilIdle()
-        verify(exactly = 0) { observer.onConfigChanged(any()) }
-    }
-
-    @Test
-    fun `updateEnableConsole with same value returns false and does not notify`() = runTest {
-        val observer = mockk<ConfigObserver>(relaxed = true)
-        manager.addObserver(observer)
-        val currentVal = config.enableConsole
-
-        val result = manager.updateEnableConsole(currentVal)
-
-        assertFalse(result)
-
-        advanceUntilIdle()
-        verify(exactly = 0) { observer.onConfigChanged(any()) }
-    }
-
-    @Test
-    fun `updateEnableFile with same value returns false and does not notify`() = runTest {
-        val observer = mockk<ConfigObserver>(relaxed = true)
-        manager.addObserver(observer)
-        val currentVal = config.enableFile
-
-        val result = manager.updateEnableFile(currentVal)
-
-        assertFalse(result)
-
-        advanceUntilIdle()
-        verify(exactly = 0) { observer.onConfigChanged(any()) }
     }
 
     @Test
