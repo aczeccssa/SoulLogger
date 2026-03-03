@@ -8,6 +8,7 @@ import org.jetbrains.kotlinx.dataframe.io.DisplayConfiguration
 import org.jetbrains.kotlinx.dataframe.io.toStandaloneHTML
 import java.nio.file.Files
 import java.nio.file.Path
+import java.nio.file.Paths
 
 internal object CSVAnalyser {
     internal const val FULLY_RESULT_HTML_NAME = "fully_result_from_csv.html"
@@ -115,8 +116,10 @@ internal object CSVAnalyser {
     fun analysisCSVToHtmlWithAnalyzedFooter(df: DataFrame<*>, path: Path): Path {
         val output = path.resolve(FULLY_RESULT_HTML_NAME)
         // Write dataframe to html
-        Files.createDirectories(output.parent) // @FIXME: Parent folder complete.
-        Files.createFile(output)
+        output.parent?.normalize()?.let { 
+            Files.createDirectories(it) 
+        }
+        
         val file = output.toFile()
         val html = df.toStandaloneHTML(htmlConfig) {
             // c6 column
