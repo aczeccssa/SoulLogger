@@ -8,6 +8,7 @@ import org.jetbrains.kotlinx.dataframe.io.DisplayConfiguration
 import org.jetbrains.kotlinx.dataframe.io.toStandaloneHTML
 import java.nio.file.Files
 import java.nio.file.Path
+import java.nio.file.Paths
 
 internal object CSVAnalyser {
     internal const val FULLY_RESULT_HTML_NAME = "fully_result_from_csv.html"
@@ -116,8 +117,6 @@ internal object CSVAnalyser {
         val output = path.resolve(FULLY_RESULT_HTML_NAME)
         // Write dataframe to html
         output.parent?.normalize()?.let { 
-            // Ensure the normalized path is within an expected base directory
-            // if (!it.startsWith(expectedBaseDir)) throw SecurityException("Invalid path")
             Files.createDirectories(it) 
         }
         
