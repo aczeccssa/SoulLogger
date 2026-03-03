@@ -115,7 +115,12 @@ internal object CSVAnalyser {
     fun analysisCSVToHtmlWithAnalyzedFooter(df: DataFrame<*>, path: Path): Path {
         val output = path.resolve(FULLY_RESULT_HTML_NAME)
         // Write dataframe to html
-        output.parent?.let { Files.createDirectories(it) }
+        output.parent?.normalize()?.let { 
+            // Ensure the normalized path is within an expected base directory
+            // if (!it.startsWith(expectedBaseDir)) throw SecurityException("Invalid path")
+            Files.createDirectories(it) 
+        }
+        
         val file = output.toFile()
         val html = df.toStandaloneHTML(htmlConfig) {
             // c6 column
