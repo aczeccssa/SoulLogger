@@ -9,17 +9,28 @@ import com.lestere.opensource.logger.SoulLoggerAnalyzer
 import com.lestere.opensource.logger.SoulLoggerAnalyzer.ANALYSIS_CSV_EXT
 import com.lestere.opensource.logger.SoulLoggerAnalyzer.ANALYSIS_CSV_FOUNT
 import com.lestere.opensource.logger.SoulLoggerPluginConfiguration
-import com.lestere.opensource.utils.*
-import io.ktor.http.*
-import io.ktor.server.application.*
-import io.ktor.server.response.*
-import io.ktor.server.routing.*
+import com.lestere.opensource.utils.fileCreateException
+import com.lestere.opensource.utils.fileNotFoundException
+import com.lestere.opensource.utils.invalidPathParameterException
+import com.lestere.opensource.utils.isValidPathParameter
+import com.lestere.opensource.utils.pathParametersNotFound
+import com.lestere.opensource.utils.respondRefiled
+import com.lestere.opensource.utils.toLcsSecString
+import io.ktor.http.HttpStatusCode
+import io.ktor.server.application.Application
+import io.ktor.server.application.call
+import io.ktor.server.response.header
+import io.ktor.server.response.respondFile
+import io.ktor.server.routing.Route
+import io.ktor.server.routing.get
+import io.ktor.server.routing.route
+import io.ktor.server.routing.routing
 import org.jetbrains.kotlinx.dataframe.DataFrame
 import org.jetbrains.kotlinx.dataframe.io.readCSV
 import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
-import java.util.*
+import java.util.UUID
 import kotlin.io.path.pathString
 
 /**
@@ -88,15 +99,20 @@ private fun Route.handleRequestGenerateLogFileAnalysisHtmlResult(
                 pathParametersNotFound("timestamp"),
                 Unit
             )
+            if (!isValidPathParameter(ts)) return@get call.respondRefiled(
+                HttpStatusCode.BadRequest,
+                invalidPathParameterException,
+                Unit
+            )
             var path = Paths.get("${reportDict}/${ts}")
             if (!Files.exists(path)) {
-                val logPath = Paths.get("${logDict}/${call.parameters["timestamp"]}.log")
+                val logPath = Paths.get("${logDict}/${ts}.log")
                 if (!Files.exists(logPath)) return@get call.respondRefiled(
                     HttpStatusCode.BadRequest,
                     fileNotFoundException,
                     Unit
                 )
-                path = Paths.get("${tempDict}/${call.parameters["timestamp"]}")
+                path = Paths.get("${tempDict}/${ts}")
                 if (!Files.exists(path)) generateNotExistsLogReport(logPath, tempDict, aliveDurationMs)
             }
             // Using csv report to generate
@@ -119,6 +135,11 @@ private fun Route.handleRequestGetGeneratedLogFileAnalysisHtmlResult(tempDict: S
         val id = call.parameters["id"] ?: return@get call.respondRefiled(
             HttpStatusCode.BadRequest,
             pathParametersNotFound("id"),
+            Unit
+        )
+        if (!isValidPathParameter(id)) return@get call.respondRefiled(
+            HttpStatusCode.BadRequest,
+            invalidPathParameterException,
             Unit
         )
         val path = Paths.get("${tempDict}/${id}/${CSVAnalyser.FULLY_RESULT_HTML_NAME}")

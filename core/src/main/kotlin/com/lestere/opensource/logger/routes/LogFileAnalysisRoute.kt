@@ -4,11 +4,17 @@ import com.lestere.opensource.logger.SoulLogger
 import com.lestere.opensource.logger.SoulLoggerAnalyzer
 import com.lestere.opensource.logger.SoulLoggerPluginConfiguration
 import com.lestere.opensource.utils.fileNotFoundException
+import com.lestere.opensource.utils.invalidPathParameterException
+import com.lestere.opensource.utils.isValidPathParameter
 import com.lestere.opensource.utils.pathParametersNotFound
 import com.lestere.opensource.utils.respondRefiled
-import io.ktor.http.*
-import io.ktor.server.application.*
-import io.ktor.server.routing.*
+import io.ktor.http.HttpStatusCode
+import io.ktor.server.application.Application
+import io.ktor.server.application.call
+import io.ktor.server.routing.Route
+import io.ktor.server.routing.get
+import io.ktor.server.routing.route
+import io.ktor.server.routing.routing
 
 internal fun Application.configureSoulLoggerLogFileAnalysis(config: SoulLoggerPluginConfiguration) {
     routing {
@@ -36,6 +42,11 @@ private fun Route.handleAnalysisTimestampRequest(dictionary: String, maxItems: I
         val id = call.parameters["timestamp"] ?: return@get call.respondRefiled(
             HttpStatusCode.BadRequest,
             pathParametersNotFound("timestamp"),
+            Unit
+        )
+        if (!isValidPathParameter(id)) return@get call.respondRefiled(
+            HttpStatusCode.BadRequest,
+            invalidPathParameterException,
             Unit
         )
         val page = call.queryParameters["page"]?.toIntOrNull() ?: 0

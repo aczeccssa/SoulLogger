@@ -2,12 +2,19 @@ package com.lestere.opensource.logger.routes
 
 import com.lestere.opensource.logger.SoulLoggerPluginConfiguration
 import com.lestere.opensource.utils.fileNotFoundException
+import com.lestere.opensource.utils.invalidPathParameterException
+import com.lestere.opensource.utils.isValidPathParameter
 import com.lestere.opensource.utils.pathParametersNotFound
 import com.lestere.opensource.utils.respondRefiled
-import io.ktor.http.*
-import io.ktor.server.application.*
-import io.ktor.server.response.*
-import io.ktor.server.routing.*
+import io.ktor.http.HttpStatusCode
+import io.ktor.server.application.Application
+import io.ktor.server.application.call
+import io.ktor.server.response.header
+import io.ktor.server.response.respondFile
+import io.ktor.server.routing.Route
+import io.ktor.server.routing.get
+import io.ktor.server.routing.route
+import io.ktor.server.routing.routing
 import java.nio.file.Paths
 
 internal fun Application.configureSoulLoggerLogFileReflex(config: SoulLoggerPluginConfiguration) {
@@ -23,6 +30,11 @@ private fun Route.handleTimestampFileRequest(dictionary: String) {
         val id = call.parameters["timestamp"] ?: return@get call.respondRefiled(
             HttpStatusCode.BadRequest,
             pathParametersNotFound("timestamp"),
+            Unit
+        )
+        if (!isValidPathParameter(id)) return@get call.respondRefiled(
+            HttpStatusCode.BadRequest,
+            invalidPathParameterException,
             Unit
         )
         val file = Paths.get("${dictionary}/${id}.log").toFile()

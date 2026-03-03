@@ -16,3 +16,5 @@ public fun autoReleaseCyberSystemCachedException(e: Exception) = CodableExceptio
 public fun autoReleaseCyberTaskRunningException(key: UUID, e: Exception) = CodableException(51701, "Force task $key failed with exception: ${e.message}")
 
 public fun pathParametersNotFound(key: String) = CodableException(10009, "Path parameter $key not found.")
+
+public val invalidPathParameterException = CodableException(10010, "Invalid path parameter.")
